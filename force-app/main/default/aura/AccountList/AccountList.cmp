@@ -1,0 +1,19 @@
+<aura:component controller="AccountController">
+    <aura:registerEvent name="accountsLoaded" type="c:AccountsLoaded"/>
+    <aura:attribute name="accounts" type="Account[]"/>
+    <!-- Test Data with VS Code--> 
+    <aura:attribute name="city1" type="String"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+    <lightning:select  aura:id="accIndustry" name="select1" label="Select City" required="true" onchange="{!c.onPicklistChange}">
+        <option value="">--None--</option>
+        <option value="Pune">Pune</option>
+        <option value="Bangalore">Bangalore</option>
+        <option value="UP">UP</option>
+    </lightning:select>
+    <ul>
+    <aura:iteration items="{!v.accounts}" var="account">
+        <c:AccountListItem account="{!account}"/>
+    </aura:iteration>
+    </ul>
+    
+</aura:component>
