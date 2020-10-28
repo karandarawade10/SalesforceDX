@@ -1,0 +1,421 @@
+<apex:page sidebar="false" showHeader="false"  standardStylesheets="false" applyBodyTag="false" renderAs="pdf" >
+<head>
+    
+<style type="text/css">
+   table, th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+    //margin:30px;   
+}
+.tr2 td,.tr3 td {
+  
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+}
+.tr1 td{
+  
+    border-top: 1px solid #FDE9D9;
+    border-bottom: 1px solid #FDE9D9;
+}
+body{
+    font-family: "verdana";
+}
+h2{
+    font-size: 20px;
+    height: 10px;
+}
+.main{
+}
+.logo{
+    width: 220px;
+    height: 70px;
+}
+.logo1{ width:10%; }
+.r21 {width:30%}
+ .ptr{ border-bottom:2px solid white; }
+</style>
+   </head>
+ <BODY>
+        <div class="main">
+           
+            <!-- row1 --> 
+            <table style="width:100%" class="tablemain">
+            <tr>
+            <th colspan="18">
+            <table style="width:100%" class="tr1" >
+            <tr style=" background:#FDE9D9;">
+                <td width="20%" style="border-left: 1px solid white; background:white;" >  <BR/> <apex:image url="" width="150" height="100"/>
+                </td>
+                <td width="38.2%" style="text-align:center;">           
+                    <h3>Distribution Business Unit</h3><br/>
+                    <h3> Cummins Field Service Report</h3><br/>
+                    <h3>(Dealership Name)</h3>          
+                </td>
+                
+            <td width="35%" style="font-size:14px; ">&nbsp;<b>Dealership Branch :<BR/>
+            &nbsp;Single Point Contact No. :<BR/>
+            &nbsp;Toll Free No :<BR/>    
+            &nbsp;Customer care email ID :</b>
+            </td> 
+            <td width="8%" style="border-right: 1px solid white;font-size:14px;color:red;text-align:center;" ><BR/><BR/><b>Dealership Logo</b> </td> 
+            </tr>
+            </table>
+            </th>
+            </tr>
+            <!-- row2 --> 
+          
+            <tr> 
+             <td width="100%" colspan="18" ><table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+             <td width="15%" style="border-left: 1px solid white;">&nbsp;SR Type : FSEM </td>   
+              <td width="19%" >&nbsp;Sub Type : AMC PM Visit  </td>    
+              <td width="20%" >&nbsp;SRN :<BR/>&nbsp;SR-TS-SW-1819-005669 </td> 
+              <td width="25.7%">&nbsp;FSR No : SR-TS-SW-1819-005669_1126_310518_camc_form</td>   
+             <td  width="13%" style="border-right: 1px solid white;">&nbsp;Date : 31-05-2018 </td>  </tr></table></td>
+            </tr>   
+            
+            
+            <!-- row3 --> 
+            
+            <tr style="font-size: 12px; ">
+                <td width="85%" colspan="18"> <table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+                    <td style="border-left: 1px solid white;" width="36.7%">&nbsp;<B>Customer Name :</B> EON KHARADI INFRASTRUCTURE <br/>
+                                    PRIVATE LIMITED (SEZ)
+                </td>   
+                <td width="21.5%">&nbsp;<B>Contact Person Name :</B> EON KHARADI Name :INFRASTRUCTURE PRIVATE LIMITED (SEZ)</td>
+                <td width="27.8%">&nbsp;<B>Designation :</B> Facility Incharge</td>
+                <td style="border-right: 1px solid white;">&nbsp;<B>Contact No :</B> 7030902874</td>  </tr></table></td>
+            </tr>
+            
+           
+             <!-- row4 --> 
+            
+            <tr style="font-size: 12px;">
+                <td width="85%" colspan="18"><table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+                <td style="border-left: 1px solid white;" width="36.7%">&nbsp;<B>Customer Address :</B> Kharadi, Pune</td>   
+                <td width="21.5%">&nbsp;<B>Camp Address :</B>    </td>              
+                <td width="27.8%">&nbsp;<B>eMail id 1:</b> harge@panchshil. eoncfm.inc.com</td> 
+               <td style="border-right: 1px solid white;">&nbsp;<B>eMail id 2:</b> </td>  </tr></table></td>
+
+            </tr>
+            
+             
+                 <!-- row5 --> 
+            
+           <tr style="font-size: 12px;">
+                <td  colspan="18"><table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+                <td style="border-left: 1px solid white;" width="18.3%">&nbsp;<B>ESN : </B> 25325134</td>   
+               <td  width="18.3%">&nbsp;<B>Gen/Equp Model :<BR/>&nbsp;Stamford </B> </td>   
+                <td width="9%">&nbsp;<B>GSN :</B> </td>   
+                <td width="12.6%">&nbsp;<B>Alternator / Equp Sr. No :</B> </td>    
+                <td style="text-align:center" width="10%">&nbsp;<B>Current <BR/> &nbsp;Hours : </B> </td>    
+                <td style="text-align:center" width="10%">&nbsp;<B>1847</B> </td>    
+                <td width="7.8%">  </td>    
+                <td width="30%" style="border-right: 1px solid white;">&nbsp;<B>Cumulative Hours :</B> 1847<BR/>&nbsp;<B style="color:#55B8F0;">Component Hours :</B></td>   </tr></table></td> 
+                 </tr> 
+                
+
+                <tr style="font-size: 12px;">
+                <td  colspan="18"><table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+
+                <td width="15.6%">&nbsp;<B>Engine Model : </B><BR/>&nbsp;ENGINE.KTA-38-G5.1180 @ 1500 &nbsp;A</td>   
+                <td width="15.7%"> &nbsp;<B> OEM :  </B>Powerica </td>   
+                <td width="26.8%">&nbsp;<B>Avg. Monthly Running Hrs : </B>5 </td>   
+                <td colspan="7">
+                    &nbsp;<b>Last B Check done at Hrs  Date :</b> 1828 <BR/>
+                    &nbsp;<b style="color:#55B8F0;">Last D Check done at Hrs &amp; Date : </b><BR/>
+                    &nbsp;<b>Battery repalced Hrs &amp; Date :</b><BR/>
+                    &nbsp;<b>Coolant replaced Hrs &amp; date :</b><BR/>
+                    &nbsp;<b style="color:#55B8F0;">Air Cleaner element replaced Hrs and Date:</b><BR/> </td>  
+                    
+                    </tr></table></td>
+                 </tr>         
+                 
+                
+                <tr style="font-size: 12px;">
+                <td  colspan="18"><table style="width:100%" class="tr2"> <tr style="font-weight:bold;font-size: 12px;">
+
+                <td width="15.6%">&nbsp;<B>Engine Model : </B><BR/>&nbsp;ENGINE.KTA-38-G5.1180 @ 1500 &nbsp;A</td>   
+                <td width="42.3%"> &nbsp;<B> Brand and Grade of Lube Oil used :  </B>Powerica </td>   
+                <td colspan="7">
+                    &nbsp;<b>Last B Check done at Hrs  Date :</b> 1828 <BR/>
+                    &nbsp;<b style="color:#55B8F0;">Last D Check done at Hrs &amp; Date : </b><BR/>
+                    &nbsp;<b>Battery repalced Hrs &amp; Date :</b><BR/>
+                    &nbsp;<b>Coolant replaced Hrs &amp; date :</b><BR/>
+                    &nbsp;<b style="color:#55B8F0;">Air Cleaner element replaced Hrs and Date:</b><BR/> </td>  
+                    
+                    </tr></table></td>
+                 </tr> 
+                
+                 
+        
+    <tr style="font-size: 12px;">
+    <td colspan="1">&nbsp;<B>Global Failure Code : </b><BR/><BR/><BR/>&nbsp;<b style="color:#55B8F0;">Digital Failure Cod </B></td>   
+    <td colspan="2"> &nbsp;<B>Brand and Grade of Lube Oil used :    </B> VCL</td>   
+    <td colspan="6">&nbsp;<B>Type of Coolant Used:</b> dca2<BR/>
+&nbsp;<B>Battery Make : </B>Pulse<BR/>
+&nbsp;<B style="color:#55B8F0;">Model : </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#55B8F0;">AH</b><BR/>
+&nbsp;<B style="color:#55B8F0;">Battery Sr No. :</B> </td>   
+    </tr>                     
+                 
+                 
+    <tr style="font-size: 12px;">
+    <td colspan="1">&nbsp;<B>DG Set :</B>AMF</td>   
+    <td colspan="1"> &nbsp;<B>Controller Type :   </B> PCC 3100</td>   
+    <td colspan="7">&nbsp;<B>Coolant Concentration Level : </b><b style="color: red;">Value</b>     </td>   
+    </tr>                 
+                 
+    <tr>
+    <td colspan="10"><table style="width:100%;"><tr style="font-size:14px; background: #FDE9D9; text-align: center;color:red;" class="tr3">
+    <td colspan="4"  width="56.4%" style="border-left:1px solid white;">&nbsp;<b>Engine Performance Parameters</b></td>   
+    <td style="border-right:1px solid white;" > &nbsp;<b>Service Request Details </b> </td>    </tr></table></td>    
+    </tr>   
+                       
+                 
+     <tr  style="width:100%;" >
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td colspan="4" width="13%" style="border-left:1px solid white;">&nbsp;<b>Low idle RPM</b></td>   
+    <td colspan="5" width="12%"> </td>      
+    <td colspan="1">&nbsp;<b>Lube Oil pressure</b> </td>      
+    <td colspan="1" style="text-align:center;" width="15.2%">&nbsp;PSI / Kg/Cm2/KPA </td>      
+    <td colspan="1">&nbsp;<b>Response to Service Request </b></td>      
+    <td colspan="1"> &nbsp;<b>Date <BR/>(dd/mm/yy)</b></td>      
+    <td colspan="1" style="border-right:1px solid white;">&nbsp;<b>Time </b></td></tr></table></td>      
+   
+    </tr>             
+   
+    <tr style="width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td colspan="4" width="13%" style="border-left:1px solid white;">&nbsp;<b>High idle RPM</b></td>   
+    <td colspan="5" width="12%"> </td>      
+    <td colspan="1" width="16.4%">&nbsp;<b>Lube Oil pressure</b> </td>      
+    <td colspan="1" width="15.2%" style="text-align:center;">&nbsp;PSI / Kg/Cm2/KPA </td>      
+    <td colspan="1" width="26.4%">&nbsp;<b>Failure Date </b></td>      
+    <td width="11.9%">&nbsp;31/05/18</td>      
+    <td style="border-right:1px solid white;">&nbsp;15:30</td>  </tr></table></td>    
+   
+    </tr>             
+             
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td colspan="4" width="13%" style="border-left:1px solid white;">&nbsp;<b>Full Load RPM</b></td>   
+    <td colspan="5"  width="12%"> </td>      
+    <td width="16.4%">&nbsp;<b>Lube Oil pressure</b> </td>      
+    <td width="15.2%">&nbsp;PSI / Kg/Cm2/KPA </td>      
+    <td width="26.4%" >&nbsp;<b>Failure Reported on </b></td>      
+    <td width="11.9%">&nbsp;31/05/18</td>      
+    <td style="border-right:1px solid white;">&nbsp;15:32</td> </tr></table></td>        
+   
+    </tr>            
+      
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">        
+    <td colspan="4" width="13%" style="border-left:1px solid white;">&nbsp;<b>Coolant Temp</b></td>   
+    <td colspan="5"  width="12%"> </td>      
+    <td width="16.4%">&nbsp;<b>Lube Oil Temp</b> </td>      
+    <td width="15.2%"> </td>      
+    <td width="26.4%">&nbsp;<b>Customer Requested on </b></td>      
+    <td width="11.9%">&nbsp;31/05/18</td>      
+    <td style="border-right:1px solid white;">&nbsp;16:53</td>   </tr></table></td>    
+   
+    </tr>             
+                 
+    <tr  >
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">     
+    <td colspan="4" width="13%" style="border-left:1px solid white;">&nbsp;<b>Cranking Voltage</b></td>   
+    <td colspan="5"  width="12%"> </td>      
+    <td width="16.4%"> </td>      
+    <td width="15.2%"> </td>      
+    <td width="26.4%">&nbsp;<b>Attended on </b></td>      
+    <td width="11.9%">&nbsp;31/05/18</td>      
+    <td style="border-right:1px solid white;">&nbsp;16:47</td>     </tr></table></td>  
+   
+    </tr>              
+                 
+                 
+    <tr style="font-size: 13px;width:100%">
+    <td colspan="10" ><table style="width:100%;"><tr style="font-size: 12px;" class="tr3"> 
+    <td width="30.8%" style="border-left:1px solid white; text-align:center;background:#FDE9D9;">&nbsp;<h4 style="margin-top: -15px">Parameters for Generator Set</h4></td>   
+    <td width="25.4%" style="background:#FDE9D9;"> &nbsp;<h4 style="margin-top: -15px">Parameters for Other applications</h4> </td>      
+    <td  width="26.5%"> &nbsp;<b>Diagnosis Completed on</b></td>      
+    <td   width="12%">&nbsp;31/05/18</td>      
+    <td colspan="2" width="20%" style="border-right:1px solid white;">&nbsp;17:53</td>       </tr></table></td> 
+    </tr>             
+                 
+                 
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td colspan="1" width="13%" style="border-left:1px solid white;">&nbsp;<b>Voltage (AC)</b></td>   
+    <td width="5%">&nbsp;415 Volts </td>      
+    <td width="7%">&nbsp;<B>Frequency</B> </td>      
+    <td width="6%">&nbsp;50 Hz </td>      
+    <td width="10.2%">&nbsp;<b>Drilling Speed </b></td>      
+    <td width="15.3%" style="text-align:right;">&nbsp;RPM</td>      
+    <td width="26.6%">&nbsp;<B>Required Material Received on</B></td>      
+   <td width="11.9%">&nbsp;NA</td>    
+   <td style="border-right:1px solid white;">&nbsp;NA</td>   </tr> </table></td>
+    </tr>             
+                 
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td colspan="1" width="13%" style="border-left:1px solid white;">    &nbsp;<b>Current (AC)</b></td>   
+    <td width="5%" >&nbsp;<B>Amp</B> </td>      
+    <td width="7%">&nbsp;Load </td>      
+    <td width="6%">&nbsp;kW </td>      
+    <td width="10.2%">&nbsp;<b>bb </b></td>      
+    <td  width="15.3%" style="text-align:right;">&nbsp;RPM</td>      
+    <td width="26.6%">&nbsp;<B>Actual Resolution Date</B></td>      
+    <td width="11.9%">&nbsp;31/05/18</td>    
+    <td style="border-right:1px solid white;">&nbsp;18:08</td>     </tr> </table></td>
+    </tr>               
+                 
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">        
+    <td colspan="1" width="12.8%" style="border-left:1px solid white;">&nbsp;<b>Power Factor</b></td>   
+    <td  width="12%"> </td>      
+    <td  width="6%"> </td>      
+    <td width="10.1%">&nbsp;<b>Gear Speed</b> </td>      
+    <td width="15.3%" style="text-align:right;">&nbsp;RPM</td>      
+    <td width="26.6%"></td>      
+    <td width="11.9%"></td>    
+    <td  width="12%" style="border-right:1px solid white;"></td>      </tr> </table></td>
+    </tr>              
+                 
+    <tr ><td colspan="10">
+    <h4 style="margin:3px;float:left">&nbsp;<b style="color: red;">for AMC/CAMC Visits : </b>
+    <b>Purpose :</b></h4><div style="padding-top: 5px;">Preventive Maintenance Visit.</div>
+    <h4 style="color: red;margin:6px;"><b>For Break down calls :<span style="color: black"> Customer Complaint :</SPAN></b>
+    </h4></td> </tr>             
+    
+    <tr><td colspan="10">
+    <h4 style="margin:3px;float:left;line-height: 14px;"><b>Inspection/Observation and Work Done in Brief : 
+    </b></h4>AMC visit. Carried out preventive maintenance check. </td></tr>             
+                 
+    <tr><td colspan="10">
+    <h4 style="margin:3px;float:left;line-height: 14px;"><b>Problem Resolution/Solution : </b>
+    </h4>Carried out AMC visit as per check sheet. </td></tr>             
+    
+    <tr ><td colspan="10">
+    <h4 style="margin:3px;float:left;line-height: 14px;"><b>Recommendation/Suggestion :  </b></h4>
+    (Also Mention Details if any other descrepancies Observed)
+    <h4 style="color:#55B8F0;font-size: 14px;">&nbsp;(Additional information for Opportunities : Part No. / Description / Quantiry required - To be captured as opportunities/activities in CDOS)</h4> 
+    </td></tr>                 
+        
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="2" width="50%" >&nbsp;<b>Problem Status : Open / Closed / Under Observation</b></td>   
+    <td colspan="6">&nbsp;<b>Responsibility (If Status is Open) : <span style="color:red;">OEM / Cummins/ Dealer / Customer</span></b></td>   
+    </tr> 
+    
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10" width="50%"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td style="border-left:1px solid white;" width="40%">&nbsp;<b>Customer's Remarks (For Escalation, use hierarchy given overleaf):</b></td>   
+    <td width="30%" style="border-right:1px solid white;">&nbsp;<b>Customer Experience :<BR/>&nbsp;Delighted / Satisfied /Average/ Dissatisfied</b></td> </tr></table></td>  
+    </tr>  
+    
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10" ><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td style="border-left:1px solid white;" width="20.6%">&nbsp;<b>Service Representative's Name :</b></td>   
+    <td width="25%"></td>   
+    <td width="20%">&nbsp;<b>Customer Name :</b></td>   
+    <td style="border-right:1px solid white;"></td>  </tr></table></td>
+    </tr>
+    
+    <tr style="font-size: 12px;width:100%;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td style="border-left:1px solid white;" width="20.6%">&nbsp;<b>Cummins ID No :</b></td>   
+    <td width="10%">&nbsp;19547937HAC</td>   
+    <td width="30.8%">&nbsp;<b>Service Rep Signature &amp; Date</b></td>   
+    <td style="border-right:1px solid white;text-align:center;">&nbsp;<b>Customer Signature &amp; Date</b></td> </tr></table></td>
+    </tr>
+    
+    
+    <tr style="font-size: 12px;width:100%;" class="ptr">
+    <td colspan="10" ><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td style="border-left:1px solid white;border-bottom:1px solid black;" width="20.6%">&nbsp;<b>Promotion ID No :</b></td>   
+    <td width="10%" style="border-bottom:1px solid black;">&nbsp;1009052</td>   
+    <td width="30.8%"></td>   
+    <td style="border-right:1px solid white;text-align:center;"></td>  </tr></table></td>
+    </tr>
+    
+    <tr style="font-size: 12px;width:100%;" >
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;" class="tr3">
+    <td style="border-left:1px solid white;" width="20.6%">&nbsp;<b>Form No :</b></td>   
+    <td width="10%" >&nbsp;</td>   
+    <td width="30.8%"  ></td>   
+    <td style="border-right:1px solid white;" ></td>  </tr></table></td>
+    </tr>
+    
+    
+    <tr style="font-size: 15px;background: #FDE9D9; text-align: center;">
+    <td colspan="9">&nbsp;<b>Escalation Matrix</b></td>       
+    </tr>   
+    
+    <tr>
+     <td colspan="10"><table style="width:100%;"><tr style="font-size: 13px;background: #FDE9D9; text-align:center;color:red;" class="tr3">
+    <td style="border-left:1px solid white;" width="45.4%">&nbsp;<b>Dealership</b></td>   
+    <td style="border-right:1px solid white;"> &nbsp;<b>Cummins </b> </td>      </tr></table></td>  
+    </tr>     
+    
+    <tr style=" background: #FDE9D9;;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px; text-align: center" class="tr3">
+    <td style="border-left:1px solid white;" width="24.8%">&nbsp;<b>*Designation</b></td>   
+    <td width="20.7%"> &nbsp;<b>Contact No. </b> </td>      
+    <td> &nbsp;<b>Function </b> </td>      
+    <td> &nbsp;<b>Designation </b> </td>      
+    <td style="border-right:1px solid white;"> &nbsp;<b>Contact No. </b> </td>  </tr></table></td>     
+    </tr> 
+    
+    <tr class="ptr">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;text-align: center; " class="tr3">
+    <td style="border-left:1px solid white;border-bottom:1px solid black;" width="24.8%"><b>Service Manager</b></td>   
+    <td style="border-bottom:1px solid black;" width="20.7%"> &nbsp; </td>      
+    <td  width="15.1%" style="border-bottom:1px solid white;" > &nbsp; </td>      
+    <td style="border-bottom:1px solid black;" width="20%"> &nbsp;<b>Dealer account Manager </b> </td>      
+    <td style="border-right:1px solid white;border-bottom:1px solid black;"> &nbsp;<b></b> </td>        </tr></table></td>     
+    </tr> 
+    
+    
+    <tr style="font-size: 12px;  text-align: center;" class="ptr">
+     <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;text-align: center; " class="tr3">
+    <td style="border-left:1px solid white;border-bottom:1px solid black;" width="24.8%"><b>Vice President</b></td>   
+    <td style="border-bottom:1px solid black;" width="20.7%" >  </td>      
+    <td  width="15.1%">Customer Support  </td>      
+    <td  style="border-bottom:1px solid black;" width="20%"> &nbsp;<b>Area Service Manager </b> </td>      
+    <td style="border-right:1px solid white;border-bottom:1px solid black;"> &nbsp;<b></b> </td>   </tr></table></td>     
+    </tr> 
+    
+    <tr style="font-size: 12px;  text-align: center;">
+     <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;text-align: center; " class="tr3">
+    <td style="border-left:1px solid white;" width="24.8%"><b>COO</b></td>   
+    <td width="20.7%">  </td>      
+    <td width="15.1%">   </td>      
+    <td width="20%"> &nbsp;<b>Zonal Service Head </b> </td>      
+    <td style="border-right:1px solid white;"> &nbsp;<b></b> </td>    </tr></table></td>    
+    </tr> 
+    
+    <tr style="font-size: 12px;  text-align: center;">
+     <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;text-align: center; " class="tr3">
+    <td style="border-left:1px solid white;" width="24.8%" ><b>Head of the Dealership</b></td>   
+    <td width="20.7%">  </td>      
+    <td  width="15.1%">   </td>      
+    <td width="20%">  </td>      
+    <td style="border-right:1px solid white;"> &nbsp;<b></b> </td>  </tr></table></td>       
+    </tr> 
+    
+    <tr style="font-size: 14px;color:red;">
+    <td colspan="10"><table style="width:100%;"><tr style="font-size: 12px;text-align: center; color:red;" class="tr3">
+    <td style="border-left:1px solid white;" width="60.5%"><b>I AM CUMMINS , YOU CAN DEPEND ON ME.</b></td>   
+    <td style="border-right:1px solid white;">&nbsp;<b>Our Goal : Zero Engine Down</b>  </td>   </tr></table></td>    
+     </tr> 
+     
+    </table>
+    
+    <b style='font-size: 13px'>* These positions would be a part of setup as per Dealership Org structure.</b>
+    
+    
+ </div>
+ <BR/><BR/><BR/><BR/><BR/>
+    </BODY>
+  
+</apex:page>

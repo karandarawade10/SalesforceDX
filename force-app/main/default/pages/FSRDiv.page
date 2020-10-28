@@ -1,0 +1,349 @@
+<apex:page sidebar="false" showHeader="false" docType="html-5.0" applyBodyTag="false" standardStylesheets="false">
+
+<head>
+<style type="text/css">
+table, th, td {
+    border: 1px solid black;
+}
+table {
+    border-collapse: collapse;
+}
+body{
+    font-family: "verdana";
+}
+h2{
+    font-size: 20px;
+    height: 10px;
+}
+.main{
+    padding: 30px;
+  
+}
+.logo{
+    width: 220px;
+    height: 70px;
+}
+.row{
+    width:1269px;
+    border-top:1px solid black;
+    border-left:1px solid black;
+}
+.column{
+    display: block;
+    float: left;
+    border-right: 1px solid;
+}
+</style>
+</head>
+
+   <BODY>
+        <div class="main">
+            <!-- row1 --> 
+            <div class="row" style="height: 16%">
+                <div class="column" style=" width: 20%;height:100%">  <BR/> <img src="ssi.jpg" class="logo"/></div></div>
+                <div class="column"  style="width: 30%; height:100%;  background:#FDE9D9;text-align: center;">           
+                    <h2 style='margin-top: 10px;line-height: 20px'>Distribution Business Unit</h2>
+                    <h2 style='margin-top: 10px;line-height: 20px'> Cummins Field Service Report</h2>
+                    <h2 style="color:red;margin-top: 10px;line-height: 30px">(Dealership Name)</h2>          
+                </div>
+                
+            <div class="column" style="font-size:14px;  width: 41.8%;height:100%;line-height:23px;">&nbsp;<b>Dealership Branch :<BR/>
+            &nbsp;Single Point Contact No. :<BR/>
+            &nbsp;Toll Free No :<BR/>
+            &nbsp;Customer care email ID :</b>
+            </div> 
+            <div class="column" style="width: 100px;height:100%;color:red; text-align: center;font-size: 14px;"><BR/><BR/><b>Dealership Logo</b> </div> 
+            </div>
+            
+            <!-- row2 --> 
+          
+            <div class="row" style="height:8%;line-height: 25px;font-weight: bold;font-size: 12px;padding-left:1px; "> 
+             <div class="column" style=" width: 15%;height:100%">&nbsp; SR Type : FSEM </div>   
+              <div class="column" style=" width: 20%;height:100%">&nbsp;Sub Type : AMC PM Visit  </div>    
+              <div class="column" style=" width: 22.9%;height:100%">&nbsp;SRN : SR-TS-SW-1819-005669 </div> 
+             <div class="column" style=" width: 24%;height:100%">&nbsp;FSR No : SR-TS-SW-1819-005669_1126_310518_camc_form</div>   
+             <div class="column" style=" width: 224px;height:100%">&nbsp;Date : 31-05-2018 </div>  
+            </div>   
+            
+            
+            <!-- row3 --> 
+            
+            <div class="row" style="height:7%;font-size: 12px; ">
+                <div class="column" style=" padding-top: 5px; width: 446px;height:100%">&nbsp;<B>Customer Name :</B> EON KHARADI INFRASTRUCTURE <BR/>
+                                    PRIVATE LIMITED (SEZ)
+                </div>   
+                <DIV class="column" style=" padding-top: 5px; width: 291px;height:100%">&nbsp;<B>Contact Person Name :</B> BALAJI</div>
+                <DIV class="column" style=" padding-top: 5px;width: 304px;height:100%">&nbsp;<B>Designation :</B> Facility Incharge</div>
+                <DIV class="column" style=" padding-top: 5px; width: 224px;height:100%">&nbsp;<B>Contact No :</B> 7030902874</div>
+       </div>
+            
+           
+             <!-- row4 --> 
+            
+            <div class="row" style="height:7%;font-size: 12px; ">
+                <div class="column" style=" width: 446px;height:100% ">&nbsp;<B>Customer Name :</B> Kharadi, Pune</div>   
+                <div class="column" style=" width: 291px;height:100% ">&nbsp;<B>Camp Address :</B>    </div>              
+                <div class="column" style="width: 304px;height:100% ">&nbsp;<B>eMail id 1:</b> harge@panchshil. eoncfm.inc.com</div> 
+               <div class="column" style=" width: 224px;height:100%">&nbsp;<B>eMail id 2:</b> </div> 
+
+            </div>
+            
+             
+                 <!-- row5 --> 
+            
+           <div class="row" style="height: 6%;font-size: 12px; ">
+                <div class="column" style=" margin-top:-3px;padding-top:3px; width: 211px;height:100% ">&nbsp;<B>ESN : </B> 25325134</div>   
+               <div class="column" style=" width: 234px;height:100%">&nbsp;<B>Gen/Equp Model :<BR/>&nbsp;Stamford </B> </div>   
+                <div class="column" style="margin-top:-3px;padding-top:3px;width: 97px;height:93%">&nbsp;<B>GSN :</B> </div>   
+                <div class="column" style="width: 193px;height:93%">&nbsp;<B>Alternator / Equp Sr. No :</B> </div>    
+                <div class="column" style="margin-top:-3px;padding-top:3px;width: 130px;height:93%">&nbsp;<B>Current Hours : </B> </div>    
+                <div class="column" style="margin-top:-3px;padding-top:3px;width: 110px;height:93%">&nbsp;<B>1847</B> </div>    
+                <div class="column" style="width: 62px;height:93%"> </div>    
+                <div class="column" style="width: 224px;height:100%">&nbsp;<B>Cumulative Hours :</B> 1847<BR/>&nbsp;<B style="color:#55B8F0;">Component Hours :</B></div>   
+                 </div> 
+                
+
+         <div class="row" style="height: 13%;font-size: 12px; ">
+                <div class="column" style=" margin-top:-3px;padding-top:3px; width: 211px;height:100% ">&nbsp;<B>Engine Model : </B><BR/>&nbsp;ENGINE.KTA-38-G5.1180 @ 1500 &nbsp;A</div>   
+               <div class="column" style=" width: 234px;height:100%"> &nbsp;<B> OEM :  </B>Powerica </div>   
+                <div class="column" style="width: 422px;height:100%">&nbsp;<B>Avg. Monthly Running Hrs : </B>5 </div>   
+                <div class="column" style="width: 398px;height:100%;line-height: 16px;">
+&nbsp;<b>Last B Check done at Hrs and Date :</b> 1828 <BR/>
+&nbsp;<b style="color:#55B8F0;">Last D Check done at Hrs and Date : </b><BR/>
+&nbsp;<b>Battery repalced Hrs and Date :</b><BR/>
+&nbsp;<b>Coolant replaced Hrs and date :</b><BR/>
+&nbsp;<b style="color:#55B8F0;">Air Cleaner element replaced Hrs and Date:</b><BR/> </div>    
+                 </div>         
+                 
+                 
+        
+    <div class="row" style="height: 14%;font-size: 12px; ">
+        <div class="column" style=" margin-top:-3px;padding-top:3px; width: 211px;height:100%; ">&nbsp;<B>Global Failure Code : </B><BR/><BR/><BR/>&nbsp;<B style="color:#55B8F0;">Digital Failure Cod </B></div>  
+        <div class="column" style=" width:657px;height:100%;"> &nbsp;<B>Brand and Grade of Lube Oil used :    </B> VCL</div>   
+    <div class="column" style="width: 398px;height:100%;line-height: 20px;">&nbsp;<B>Type of Coolant Used:</B> dca2<BR/>
+&nbsp;<B>Battery Make : </B>Pulse<BR/>
+&nbsp;<B style="color:#55B8F0;">Model : </B>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b style="color:#55B8F0;">AH</b><BR/>
+        &nbsp;<B style="color:#55B8F0;">Battery Sr No. :</B> </div>   
+    </div>                     
+                 
+                 
+    <div class="row" style="height: 4%;font-size: 12px; ">
+    <div class="column" style=" margin-top:-3px;padding-top:3px; width: 211px;height:100% ">&nbsp;<B>DG Set :</B>AMF</div>   
+    <div class="column" style=" width:182px;height:100%"> &nbsp;<B>Controller Type :   </B> PCC 3100</div>   
+    <div class="column" style="width: 873px;height:100%">&nbsp;<B>Coolant Concentration Level : </b><b style="color: red;">Value</b>     </div>   
+    </div>                 
+                 
+    <div class="row" style="height: 5%; background: #FDE9D9; text-align: center;color:red;">
+    <div class="column" style=" width: 680px;height:100% ">&nbsp;<h3 style="margin-top: -15px">Engine Performance Parameters</h3></div>   
+    <div class="column" style=" width:587px;height:100%"> &nbsp;<h3 style="margin-top: -15px">Service Request Details </h3> </div>      
+       </div>   
+                       
+                 
+     <div class="row" style="height: 5%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:73%;padding-top: 10px; ">&nbsp;<b>Low idle RPM</b></div>   
+    <div class="column" style=" width:140px;height:100%"> </div>      
+    <div class="column" style=" width:230px;height:73%;padding-top: 10px;">&nbsp;<b>Lube Oil pressure</b> </div>      
+    <div class="column" style=" width:167px;height:73%;padding-top: 10px;text-align: center;">&nbsp;PSI / Kg/Cm2/KPA </div>      
+    <div class="column" style=" width:300px;height:73%;padding-top: 10px;">&nbsp;<b>Response to Service Request </b></div>      
+    <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;<b>Date <BR/>(dd/mm/yy)</b></div>      
+    <div class="column" style=" width:140px;height:73%;padding-top: 10px;text-align: center;">&nbsp;<b>Time </b></div>      
+   
+       </div>            
+   
+    <div class="row" style="height: 5%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>High idle RPM</b></div>   
+    <div class="column" style=" width:140px;height:100%"> </div>      
+    <div class="column" style=" width:230px;height:100%;">&nbsp;<b>Lube Oil pressure</b> </div>      
+    <div class="column" style=" width:167px;height:100%;text-align: center;">&nbsp;PSI / Kg/Cm2/KPA </div>      
+    <div class="column" style=" width:300px;height:100%;">&nbsp;<b>Failure Date </b></div>      
+    <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;31/05/18</div>      
+    <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;15:30</div>      
+   
+       </div>            
+             
+     <div class="row" style="height: 5%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Full Load RPM</b></div>   
+    <div class="column" style=" width:140px;height:100%"> </div>      
+    <div class="column" style=" width:230px;height:100%;">&nbsp;<b>Lube Oil pressure</b> </div>      
+    <div class="column" style=" width:167px;height:100%;text-align: center;">&nbsp;PSI / Kg/Cm2/KPA </div>      
+    <div class="column" style=" width:300px;height:100%;">&nbsp;<b>Failure Reported on </b></div>      
+    <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;31/05/18</div>      
+    <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;15:32</div>      
+   
+       </div>            
+      
+    <div class="row" style="height: 5%;font-size: 12px;">
+        <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Coolant Temp</b></div>   
+    <div class="column" style=" width:140px;height:100%"> </div>      
+        <div class="column" style=" width:230px;height:100%;">&nbsp;<b>Lube Oil Temp</b> </div>      
+    <div class="column" style=" width:167px;height:100%;"> </div>      
+        <div class="column" style=" width:300px;height:100%;">&nbsp;<b>Customer Requested on </b></div>      
+        <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;31/05/18</div>      
+        <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;16:53</div>      
+   
+       </div>            
+                 
+    <div class="row" style="height: 5%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Cranking Voltage</b></div>   
+    <div class="column" style=" width:140px;height:100%"> </div>      
+    <div class="column" style=" width:230px;height:100%;"> </div>      
+    <div class="column" style=" width:167px;height:100%;"> </div>      
+    <div class="column" style=" width:300px;height:100%;">&nbsp;<b>Attended on </b></div>      
+    <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;31/05/18</div>      
+    <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;16:47</div>      
+   
+       </div>             
+                 
+                 
+    <div class="row" style="height: 5%;">
+    <div class="column" style=" width: 373px;height:100%; background: #FDE9D9;text-align: center;">&nbsp;<h4 style="margin-top: -15px">Parameters for Generator Set</h4></div>   
+    <div class="column" style=" width:306px;height:100%;background: #FDE9D9;"> &nbsp;<h4 style="margin-top: -15px">Parameters for Other applications</h4> </div>      
+    <div class="column" style=" width:300px;height:100%;font-size: 12px;"> &nbsp;<b>Diagnosis Completed on</b></div>      
+    <div class="column" style=" width:145px;height:100%;text-align: center;font-size: 12px;">&nbsp;31/05/18</div>      
+    <div class="column" style=" width:140px;height:100%;text-align: center;font-size: 12px;">&nbsp;17:53</div>      
+       </div>             
+                 
+                 
+    <div class="row" style="height: 5%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Voltage (AC)</b></div>   
+    <div class="column" style=" width:67px;height:100%">&nbsp;415 Volts </div>      
+    <div class="column" style=" width:73px;height:100%;">&nbsp;<B>Frequency</B> </div>      
+    <div class="column" style=" width:90px;height:100%;">&nbsp;50 Hz </div>      
+    <div class="column" style=" width:140px;height:100%;">&nbsp;<b>Drilling Speed </b></div>      
+    <div class="column" style=" width:165px;height:100%;">&nbsp;RPM</div>      
+    <div class="column" style=" width:300px;height:100%;">&nbsp;<B>Required Material Received on</B></div>      
+   <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;NA</div>    
+   <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;NA</div>    
+       </div>             
+                 
+    <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Current (AC)</b></div>   
+    <div class="column" style=" width:67px;height:100%">&nbsp;<B>Amp</B> </div>      
+    <div class="column" style=" width:73px;height:100%;">&nbsp;Load </div>      
+    <div class="column" style=" width:90px;height:100%;">&nbsp;kW </div>      
+    <div class="column" style=" width:140px;height:100%;">&nbsp;<b>bb </b></div>      
+    <div class="column" style=" width:165px;height:100%;">&nbsp;RPM</div>      
+    <div class="column" style=" width:300px;height:100%;">&nbsp;<B>Actual Resolution Date</B></div>      
+   <div class="column" style=" width:145px;height:100%;text-align: center;">&nbsp;31/05/18</div>    
+   <div class="column" style=" width:140px;height:100%;text-align: center;">&nbsp;18:08</div>    
+    </div>               
+                 
+    <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 140px;height:100%; ">&nbsp;<b>Power Factor</b></div>   
+    <div class="column" style=" width:141px;height:100%"> </div>      
+    <div class="column" style=" width:90px;height:100%;"> </div>      
+    <div class="column" style=" width:140px;height:100%;">&nbsp;<b>Gear Speed</b> </div>      
+    <div class="column" style=" width:165px;height:100%;">&nbsp;RPM</div>      
+    <div class="column" style=" width:300px;height:100%;"></div>      
+   <div class="column" style=" width:145px;height:100%;"></div>    
+   <div class="column" style=" width:140px;height:100%;"></div>    
+    </div>              
+                 
+                 <div class="row" style="width: 99.6%;height: 10%;border-right: 1px solid"><h4 style="margin:3px;float:left">&nbsp;<b style="color: red;">for AMC/CAMC Visits : </b><b>Purpose :</b></h4><div style="padding-top: 5px;">Preventive Maintenance Visit.</div><h4 style="color: red;margin:6px;"><b>For Break down calls :<span style="color: black"> Customer Complaint :</SPAN></b> </h4> </div>             
+    
+                 <div class="row" style="width: 99.6%;height: 10%;border-right: 1px solid"><h4 style="margin:3px;float:left;line-height: 14px;"><b>Inspection/Observation and Work Done in Brief : </b></h4>AMC visit. Carried out preventive maintenance check. </div>             
+                 
+    <div class="row" style="width: 99.6%;height: 10%;border-right: 1px solid"><h4 style="margin:3px;float:left;line-height: 14px;"><b>Problem Resolution/Solution : </b></h4>Carried out AMC visit as per check sheet. </div>             
+    
+    <div class="row" style="width: 99.6%;height: 10%;border-right: 1px solid"><h4 style="margin:3px;float:left;line-height: 14px;"><b>Recommendation/Suggestion :  </b></h4>(Also Mention Details if any other descrepancies Observed)<h4 style="color:#55B8F0;font-size: 14px;">&nbsp;(Additional information for Opportunities : Part No. / Description / Quantiry required - To be captured as opportunities/activities in CDOS)</h4> </div>                 
+        
+    <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 632px;height:100%; ">&nbsp;<b>Problem Status : Open / Closed / Under Observation</b></div>   
+    <div class="column" style=" width: 635px;height:100%; ">&nbsp;<b>Responsibility (If Status is Open) : OEM / Cummins/ Dealer / Customer</b></div>   
+    </div> 
+    
+    <div class="row" style="height: 10%;font-size: 12px;">
+    <div class="column" style=" width: 880px;height:100%; ">&nbsp;<b>Customer's Remarks (For Escalation, use hierarchy given overleaf):</b></div>   
+    <div class="column" style=" width: 387px;height:100%; ">&nbsp;<b>Customer Experience :<BR/>&nbsp;Delighted / Satisfied /Average/ Dissatisfied</b></div>   
+    </div>  
+    
+    <div class="row" style="height: 3%;font-size: 15px;">
+    <div class="column" style=" width: 300px;height:100%; ">&nbsp;<b>Service Representative's Name :</b></div>   
+    <div class="column" style=" width: 470px;height:100%; "></div>   
+    <div class="column" style=" width: 200px;height:100%; ">&nbsp;<b>Customer Name :</b></div>   
+    <div class="column" style=" width: 295px;height:100%; "></div> 
+    </div>
+    
+    <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 300px;height:100%; ">&nbsp;<b>Cummins ID No :</b></div>   
+    <div class="column" style=" width: 90px;height:100%; ">&nbsp;19547937HAC</div>   
+    <div class="column" style=" width: 470px;height:100%;text-align: center; ">&nbsp;<b>Service Rep Signature and Date</b></div>   
+    <div class="column" style=" width: 405px;height:100%; text-align: center;">&nbsp;<b>Customer Signature and Date</b></div> 
+    </div>
+    
+    
+      <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 300px;height:100%; ">&nbsp;<b>Promotion ID No :</b></div>   
+    <div class="column" style=" width: 90px;height:100%; ">&nbsp;1009052</div>   
+    <div class="column" style=" width: 470px;height:101%;text-align: center; "></div>   
+    <div class="column" style=" width: 405px;height:101%; text-align: center;"></div> 
+    </div>
+    
+    <div class="row" style="height: 3%;font-size: 12px;">
+    <div class="column" style=" width: 300px;height:100%; ">&nbsp;<b>Form No :</b></div>   
+    <div class="column" style=" width: 90px;height:100%; ">&nbsp;1009052</div>   
+    <div class="column" style=" width: 470px;height:100%;text-align: center;border-top: 1px solid white;margin-top: -1px; "></div>   
+    <div class="column" style=" width: 405px;height:100%; text-align: center;border-top: 1px solid white;margin-top: -1px;"></div> 
+    </div>
+    
+    
+    <div class="row" style="height: 5%; background: #FDE9D9; text-align: center;">
+    <div class="column" style=" width: 99.9%;height:100% ">&nbsp;<h4 style="margin-top: -15px">Escalation Matrix</h4></div>       
+    </div>   
+    
+    <div class="row" style="height: 3%; background: #FDE9D9; text-align: center;color: red;">
+    <div class="column" style=" width: 680px;height:100% ">&nbsp;<b>Dealership</b></div>   
+    <div class="column" style=" width:587px;height:100%"> &nbsp;<b>Cummins </b> </div>      
+    </div>     
+    
+    <div class="row" style="height: 3%; background: #FDE9D9; text-align: center;">
+    <div class="column" style=" width: 340px;height:100% ">&nbsp;<b>*Designation</b></div>   
+    <div class="column" style=" width:339px;height:100%"> &nbsp;<b>Contact No. </b> </div>      
+    <div class="column" style=" width:180px;height:100%"> &nbsp;<b>Function </b> </div>      
+    <div class="column" style=" width:220px;height:100%"> &nbsp;<b>Designation </b> </div>      
+    <div class="column" style=" width:185px;height:100%"> &nbsp;<b>Contact No. </b> </div>      
+    </div> 
+    
+    <div class="row" style="height: 3%; text-align: center;font-size: 14px;">
+    <div class="column" style=" width: 340px;height:100%;text-align: center; "><b>Service Manager</b></div>   
+    <div class="column" style=" width:339px;height:100%;">  </div>      
+    <div class="column" style=" width:180px;height:100%;border-bottom: 1px solid white;">  </div>      
+    <div class="column" style=" width:220px;height:100%;"> &nbsp;<b>Dealer account Manager </b> </div>      
+    <div class="column" style=" width:185px;height:100%;"> &nbsp;<b></b> </div>      
+    </div> 
+    
+    
+    <div class="row" style="height: 3%; text-align: center;font-size: 14px;">
+    <div class="column" style=" width: 340px;height:100%;text-align: center; "><b>Vice President</b></div>   
+    <div class="column" style=" width:339px;height:100%;">  </div>      
+    <div class="column" style=" width:180px;height:100%;border-bottom: 1px solid white;font-weight: bold;">Customer Support  </div>      
+    <div class="column" style=" width:220px;height:100%;"> &nbsp;<b>Area Service Manager </b> </div>      
+    <div class="column" style=" width:185px;height:100%;"> &nbsp;<b></b> </div>      
+    </div> 
+    
+    <div class="row" style="height: 3%; text-align: center;font-size: 14px;">
+    <div class="column" style=" width: 340px;height:100%;text-align: center; "><b>COO</b></div>   
+    <div class="column" style=" width:339px;height:100%">  </div>      
+    <div class="column" style=" width:180px;height:100%">   </div>      
+    <div class="column" style=" width:220px;height:100%"> &nbsp;<b>Zonal Service Head </b> </div>      
+    <div class="column" style=" width:185px;height:100%"> &nbsp;<b></b> </div>      
+    </div> 
+    
+    <div class="row" style="height: 3%; text-align: center;font-size: 14px;">
+    <div class="column" style=" width: 340px;height:100%;"><b>Head of the Dealership</b></div>   
+    <div class="column" style=" width:339px;height:100%">  </div>      
+    <div class="column" style=" width:180px;height:100%">   </div>      
+    <div class="column" style=" width:220px;height:100%">  </div>      
+    <div class="column" style=" width:185px;height:100%"> &nbsp;<b></b> </div>      
+    </div> 
+    
+    <div class="row" style="height: 3%; font-size: 14px;color:red;border-bottom: 1px solid #000000;">
+    <div class="column" style=" width: 861px;height:100%;text-align: center; "><b>I AM CUMMINS , YOU CAN DEPEND ON ME.</b></div>   
+    <div class="column" style=" width:406px;height:100%">&nbsp;<b>Our Goal : Zero Engine Down</b>  </div>      
+     </div> 
+    <b style='font-size: 13px'>* These positions would be a part of setup as per Dealership Org structure.</b>
+    
+    </BODY>
+ 
+
+</apex:page>

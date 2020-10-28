@@ -1,0 +1,195 @@
+<apex:page >
+ <head>
+<style type="text/css">
+<!--
+span.cls_005{font-family:Arial,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_005{font-family:Arial,serif;font-size:8.3px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_003{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_003{font-family:Arial,serif;font-size:11.8px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_002{font-family:Arial,serif;font-size:8.3px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_002{font-family:Arial,serif;font-size:8.3px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_004{font-family:Arial,serif;font-size:11.8px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_004{font-family:Arial,serif;font-size:11.8px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_006{font-family:Arial,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_006{font-family:Arial,serif;font-size:7.1px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_007{font-family:Arial,serif;font-size:7.1px;color:rgb(0,176,240);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_007{font-family:Arial,serif;font-size:7.1px;color:rgb(0,176,240);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_008{font-family:Arial,serif;font-size:7.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_008{font-family:Arial,serif;font-size:7.1px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_009{font-family:Arial,serif;font-size:9.5px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_009{font-family:Arial,serif;font-size:9.5px;color:rgb(255,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_010{font-family:Arial,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_010{font-family:Arial,serif;font-size:6.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_013{font-family:Arial,serif;font-size:4.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_013{font-family:Arial,serif;font-size:4.4px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_011{font-family:Arial,serif;font-size:8.3px;color:rgb(0,176,240);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_011{font-family:Arial,serif;font-size:8.3px;color:rgb(0,176,240);font-weight:normal;font-style:normal;text-decoration: none}
+span.cls_012{font-family:Arial,serif;font-size:9.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+div.cls_012{font-family:Arial,serif;font-size:9.5px;color:rgb(0,0,0);font-weight:normal;font-style:normal;text-decoration: none}
+-->
+</style>
+<script type="text/javascript" src="2baf4028-c710-11e8-b59b-0cc47a792c0a_id_2baf4028-c710-11e8-b59b-0cc47a792c0a_files/wz_jsgraphics.js"></script>
+</head>
+<body>
+<div style="position:absolute;left:50%;margin-left:-306px;top:0px;width:612px;height:792px;border-style:outset;overflow:hidden">
+<div style="position:absolute;left:0px;top:0px">
+    <apex:image url="{!$Resource.backgroung1}" width="812" height="792"/>
+   </div>
+<div style="position:absolute;left:325.32px;top:53.76px" class="cls_005"><span class="cls_005">Dealership Branch :</span></div>
+<div style="position:absolute;left:159.84px;top:53.52px" class="cls_003"><span class="cls_003">Distribution Business Unit</span></div>
+<div style="position:absolute;left:325.32px;top:64.44px" class="cls_005"><span class="cls_005">Single Point Contact No. :</span></div>
+<div style="position:absolute;left:493.80px;top:65.64px" class="cls_002"><span class="cls_002">Dealership</span></div>
+<div style="position:absolute;left:150.60px;top:68.28px" class="cls_003"><span class="cls_003">Cummins Field Service Report</span></div>
+<div style="position:absolute;left:325.32px;top:75.12px" class="cls_005"><span class="cls_005">Toll Free No :</span></div>
+<div style="position:absolute;left:504.24px;top:76.32px" class="cls_002"><span class="cls_002">Logo</span></div>
+<div style="position:absolute;left:177.60px;top:83.04px" class="cls_004"><span class="cls_004">(Dealership Name)</span></div>
+<div style="position:absolute;left:325.32px;top:85.80px" class="cls_005"><span class="cls_005">Customer care email ID :</span></div>
+<div style="position:absolute;left:18.36px;top:98.88px" class="cls_006"><span class="cls_006">SR Type : FSEM</span></div>
+<div style="position:absolute;left:94.32px;top:98.88px" class="cls_006"><span class="cls_006">Sub Type : AMC PM Visit</span></div>
+<div style="position:absolute;left:203.29px;top:98.88px" class="cls_006"><span class="cls_006">SRN :</span></div>
+<div style="position:absolute;left:325.20px;top:98.88px" class="cls_006"><span class="cls_006">FSR No : SR-TS-SW-1819-</span></div>
+<div style="position:absolute;left:446.76px;top:98.88px" class="cls_006"><span class="cls_006">Date : 31-05-2018</span></div>
+<div style="position:absolute;left:203.28px;top:108.00px" class="cls_006"><span class="cls_006">SR-TS-SW-1819-005669</span></div>
+<div style="position:absolute;left:325.20px;top:108.00px" class="cls_006"><span class="cls_006">005669_1126_310518_camc_form</span></div>
+<div style="position:absolute;left:18.36px;top:119.40px" class="cls_006"><span class="cls_006">Customer Name : EON KHARADI INFRASTRUCTURE</span></div>
+<div style="position:absolute;left:203.28px;top:119.40px" class="cls_006"><span class="cls_006">Contact Person Name : BALAJI</span></div>
+<div style="position:absolute;left:325.20px;top:119.40px" class="cls_006"><span class="cls_006">Designation : Facility Incharge</span></div>
+<div style="position:absolute;left:446.76px;top:119.40px" class="cls_006"><span class="cls_006">Contact No : 7030902874</span></div>
+<div style="position:absolute;left:18.36px;top:128.52px" class="cls_006"><span class="cls_006">PRIVATE LIMITED (SEZ)</span></div>
+<div style="position:absolute;left:18.36px;top:141.96px" class="cls_006"><span class="cls_006">Customer Address : Kharadi, Pune</span></div>
+<div style="position:absolute;left:203.28px;top:141.96px" class="cls_006"><span class="cls_006">Camp Address :</span></div>
+<div style="position:absolute;left:325.20px;top:141.96px" class="cls_006"><span class="cls_006">eMail id 1: harge@panchshil. eoncfm.inc</span></div>
+<div style="position:absolute;left:446.76px;top:141.96px" class="cls_006"><span class="cls_006">eMail id 2:</span></div>
+<div style="position:absolute;left:325.20px;top:151.08px" class="cls_006"><span class="cls_006">com</span></div>
+<div style="position:absolute;left:18.36px;top:164.16px" class="cls_006"><span class="cls_006">ESN : 25325134</span></div>
+<div style="position:absolute;left:123.48px;top:164.16px" class="cls_006"><span class="cls_006">Gen/Equp Model :</span></div>
+<div style="position:absolute;left:203.28px;top:164.16px" class="cls_006"><span class="cls_006">GSN :</span></div>
+<div style="position:absolute;left:257.76px;top:164.16px" class="cls_006"><span class="cls_006">Alternator / Equp Sr.</span></div>
+<div style="position:absolute;left:333.96px;top:164.16px" class="cls_006"><span class="cls_006">Current</span></div>
+<div style="position:absolute;left:379.20px;top:164.16px" class="cls_006"><span class="cls_006">1847</span></div>
+<div style="position:absolute;left:446.76px;top:164.16px" class="cls_006"><span class="cls_006">Cumulative Hours : 1847</span></div>
+<div style="position:absolute;left:123.48px;top:173.28px" class="cls_006"><span class="cls_006">Stamford</span></div>
+<div style="position:absolute;left:257.76px;top:173.28px" class="cls_006"><span class="cls_006">No :</span></div>
+<div style="position:absolute;left:334.68px;top:173.28px" class="cls_006"><span class="cls_006">Hours :</span></div>
+<div style="position:absolute;left:446.76px;top:173.28px" class="cls_007"><span class="cls_007">Component Hours :</span></div>
+<div style="position:absolute;left:18.36px;top:181.44px" class="cls_006"><span class="cls_006">Engine Model :</span></div>
+<div style="position:absolute;left:123.48px;top:181.44px" class="cls_006"><span class="cls_006">OEM : Powerica</span></div>
+<div style="position:absolute;left:203.28px;top:181.44px" class="cls_006"><span class="cls_006">Avg. Monthly Running Hrs : 5</span></div>
+<div style="position:absolute;left:367.32px;top:181.44px" class="cls_006"><span class="cls_006">Last B Check done at Hrs and Date  : 1828</span></div>
+<div style="position:absolute;left:18.36px;top:190.56px" class="cls_006"><span class="cls_006">ENGINE.KTA-38-G5.1180 @ 1500 A</span></div>
+<div style="position:absolute;left:367.32px;top:190.56px" class="cls_007"><span class="cls_007">Last D Check done at Hrs and Date :</span></div>
+<div style="position:absolute;left:367.32px;top:199.68px" class="cls_006"><span class="cls_006">Battery repalced Hrs and Date :</span></div>
+<div style="position:absolute;left:367.32px;top:208.80px" class="cls_006"><span class="cls_006">Coolant replaced Hrs and date :</span></div>
+<div style="position:absolute;left:367.32px;top:217.92px" class="cls_007"><span class="cls_007">Air Cleaner element replaced Hrs and Date:</span></div>
+<div style="position:absolute;left:18.36px;top:226.32px" class="cls_006"><span class="cls_006">Global Failure Code :</span></div>
+<div style="position:absolute;left:123.48px;top:226.32px" class="cls_006"><span class="cls_006">Brand and Grade of Lube Oil used : VCL</span></div>
+<div style="position:absolute;left:367.32px;top:226.32px" class="cls_006"><span class="cls_006">Type of Coolant Used: dca2</span></div>
+<div style="position:absolute;left:367.32px;top:235.44px" class="cls_006"><span class="cls_006">Battery Make : Pulse</span></div>
+<div style="position:absolute;left:18.36px;top:244.56px" class="cls_007"><span class="cls_007">Digital Failure Code :</span></div>
+<div style="position:absolute;left:367.32px;top:244.56px" class="cls_007"><span class="cls_007">Model :</span></div>
+<div style="position:absolute;left:428.42px;top:244.56px" class="cls_007"><span class="cls_007">AH</span></div>
+<div style="position:absolute;left:367.32px;top:253.68px" class="cls_007"><span class="cls_007">Battery Sr No. :</span></div>
+<div style="position:absolute;left:18.36px;top:276.96px" class="cls_006"><span class="cls_006">DG Set : AMF</span></div>
+<div style="position:absolute;left:123.48px;top:276.96px" class="cls_006"><span class="cls_006">Controller Type : PCC 3100</span></div>
+<div style="position:absolute;left:203.28px;top:276.96px" class="cls_006"><span class="cls_006">Coolant Concentration Level : </span><span class="cls_008">Value</span></div>
+<div style="position:absolute;left:107.28px;top:289.80px" class="cls_009"><span class="cls_009">Engine Performance Parameters</span></div>
+<div style="position:absolute;left:383.13px;top:289.80px" class="cls_009"><span class="cls_009">Service Request Details</span></div>
+<div style="position:absolute;left:461.40px;top:302.76px" class="cls_006"><span class="cls_006">Date</span></div>
+<div style="position:absolute;left:18.36px;top:307.20px" class="cls_006"><span class="cls_006">Low idle RPM</span></div>
+<div style="position:absolute;left:159.96px;top:306.96px" class="cls_006"><span class="cls_006">Lube Oil pressure</span></div>
+<div style="position:absolute;left:267.36px;top:306.84px" class="cls_010"><span class="cls_010">PSI / Kg/Cm</span><span class="cls_013"><sup>2</sup></span><span class="cls_010">/KPA</span></div>
+<div style="position:absolute;left:325.20px;top:306.96px" class="cls_006"><span class="cls_006">Response to Service Request</span></div>
+<div style="position:absolute;left:505.20px;top:307.20px" class="cls_006"><span class="cls_006">Time</span></div>
+<div style="position:absolute;left:450.24px;top:311.88px" class="cls_006"><span class="cls_006">(dd/mm/yy)</span></div>
+<div style="position:absolute;left:18.36px;top:320.76px" class="cls_006"><span class="cls_006">High idle RPM</span></div>
+<div style="position:absolute;left:159.96px;top:320.76px" class="cls_006"><span class="cls_006">Lube Oil pressure</span></div>
+<div style="position:absolute;left:267.36px;top:322.32px" class="cls_010"><span class="cls_010">PSI / Kg/Cm</span><span class="cls_013"><sup>2</sup></span><span class="cls_010">/KPA</span></div>
+<div style="position:absolute;left:325.20px;top:320.76px" class="cls_006"><span class="cls_006">Failure Date</span></div>
+<div style="position:absolute;left:456.24px;top:320.76px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:320.76px" class="cls_010"><span class="cls_010">15:30</span></div>
+<div style="position:absolute;left:18.36px;top:333.72px" class="cls_006"><span class="cls_006">Full Load RPM</span></div>
+<div style="position:absolute;left:159.96px;top:333.72px" class="cls_006"><span class="cls_006">Lube Oil pressure</span></div>
+<div style="position:absolute;left:267.36px;top:335.28px" class="cls_010"><span class="cls_010">PSI / Kg/Cm</span><span class="cls_013"><sup>2</sup></span><span class="cls_010">/KPA</span></div>
+<div style="position:absolute;left:325.20px;top:333.72px" class="cls_006"><span class="cls_006">Failure Reported on</span></div>
+<div style="position:absolute;left:456.24px;top:333.72px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:333.72px" class="cls_010"><span class="cls_010">15:52</span></div>
+<div style="position:absolute;left:18.36px;top:346.68px" class="cls_006"><span class="cls_006">Coolant Temp</span></div>
+<div style="position:absolute;left:159.96px;top:346.68px" class="cls_006"><span class="cls_006">Lube Oil Temp</span></div>
+<div style="position:absolute;left:325.20px;top:346.68px" class="cls_006"><span class="cls_006">Customer Requested on</span></div>
+<div style="position:absolute;left:456.24px;top:346.68px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:346.68px" class="cls_010"><span class="cls_010">16:53</span></div>
+<div style="position:absolute;left:18.36px;top:359.64px" class="cls_006"><span class="cls_006">Cranking Voltage</span></div>
+<div style="position:absolute;left:325.20px;top:359.64px" class="cls_006"><span class="cls_006">Attended on</span></div>
+<div style="position:absolute;left:456.24px;top:359.64px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:359.64px" class="cls_010"><span class="cls_010">16:47</span></div>
+<div style="position:absolute;left:58.68px;top:372.60px" class="cls_005"><span class="cls_005">Parameters for Generator Set</span></div>
+<div style="position:absolute;left:204.36px;top:372.60px" class="cls_005"><span class="cls_005">Parameters for Other applications</span></div>
+<div style="position:absolute;left:325.20px;top:372.60px" class="cls_006"><span class="cls_006">Diagnosis Completed on</span></div>
+<div style="position:absolute;left:456.24px;top:372.60px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:372.60px" class="cls_010"><span class="cls_010">17:53</span></div>
+<div style="position:absolute;left:18.36px;top:385.56px" class="cls_006"><span class="cls_006">Voltage (AC)</span></div>
+<div style="position:absolute;left:94.32px;top:385.56px" class="cls_006"><span class="cls_006">415 Volts</span></div>
+<div style="position:absolute;left:123.48px;top:385.56px" class="cls_006"><span class="cls_006">Frequency</span></div>
+<div style="position:absolute;left:159.96px;top:385.56px" class="cls_006"><span class="cls_006">50 Hz</span></div>
+<div style="position:absolute;left:203.28px;top:385.56px" class="cls_006"><span class="cls_006">Drilling Speed</span></div>
+<div style="position:absolute;left:310.56px;top:385.56px" class="cls_010"><span class="cls_010">RPM</span></div>
+<div style="position:absolute;left:325.20px;top:385.56px" class="cls_006"><span class="cls_006">Required Material Received on</span></div>
+<div style="position:absolute;left:464.52px;top:385.56px" class="cls_010"><span class="cls_010">NA</span></div>
+<div style="position:absolute;left:508.57px;top:385.56px" class="cls_010"><span class="cls_010">NA</span></div>
+<div style="position:absolute;left:18.36px;top:398.52px" class="cls_006"><span class="cls_006">Current (AC)</span></div>
+<div style="position:absolute;left:94.32px;top:398.52px" class="cls_006"><span class="cls_006">Amp</span></div>
+<div style="position:absolute;left:123.48px;top:398.52px" class="cls_006"><span class="cls_006">Load</span></div>
+<div style="position:absolute;left:159.96px;top:398.52px" class="cls_006"><span class="cls_006">kW</span></div>
+<div style="position:absolute;left:203.28px;top:398.52px" class="cls_006"><span class="cls_006">bb</span></div>
+<div style="position:absolute;left:310.56px;top:398.52px" class="cls_010"><span class="cls_010">RPM</span></div>
+<div style="position:absolute;left:325.20px;top:398.52px" class="cls_006"><span class="cls_006">Actual Resolution Date</span></div>
+<div style="position:absolute;left:456.24px;top:398.52px" class="cls_010"><span class="cls_010">31/05/18</span></div>
+<div style="position:absolute;left:505.20px;top:398.52px" class="cls_010"><span class="cls_010">18:08</span></div>
+<div style="position:absolute;left:18.36px;top:407.40px" class="cls_006"><span class="cls_006">Power Factor</span></div>
+<div style="position:absolute;left:203.28px;top:407.40px" class="cls_006"><span class="cls_006">Gear Speed</span></div>
+<div style="position:absolute;left:310.56px;top:407.40px" class="cls_010"><span class="cls_010">RPM</span></div>
+<div style="position:absolute;left:18.48px;top:416.28px" class="cls_002"><span class="cls_002">for AMC/CAMC Visits :</span><span class="cls_005"> Purpose : Preventive Maintenance Visit.</span></div>
+<div style="position:absolute;left:18.48px;top:426.96px" class="cls_002"><span class="cls_002">For Break down calls :</span><span class="cls_005"> Customer Complaint :</span></div>
+<div style="position:absolute;left:18.48px;top:443.76px" class="cls_005"><span class="cls_005">Inspection/Observation and Work Done in Brief : AMC  visit. Carried out preventive maintenance check.</span></div>
+<div style="position:absolute;left:18.48px;top:477.00px" class="cls_005"><span class="cls_005">Problem Resolution/Solution : Carried  out AMC visit as per check  sheet.</span></div>
+<div style="position:absolute;left:18.48px;top:512.28px" class="cls_005"><span class="cls_005">Recommendation/Suggestion : (Also Mention Details if any other descrepancies Observed)</span></div>
+<div style="position:absolute;left:18.48px;top:533.64px" class="cls_011"><span class="cls_011">(Additional information for Opportunities : Part No. / Description / Quantiry required - To be captured as opportunities/activities in CDOS)</span></div>
+<div style="position:absolute;left:18.36px;top:548.40px" class="cls_006"><span class="cls_006">Problem Status : Open / Closed / Under Observation</span></div>
+<div style="position:absolute;left:257.76px;top:548.40px" class="cls_006"><span class="cls_006">Responsibility (If Status is Open) : </span><span class="cls_008"> OEM / Cummins/ Dealer / Customer</span></div>
+<div style="position:absolute;left:18.36px;top:557.28px" class="cls_006"><span class="cls_006">Customer's Remarks (For Escalation, use hierarchy given overleaf):</span></div>
+<div style="position:absolute;left:367.32px;top:557.28px" class="cls_006"><span class="cls_006">Customer Experience :</span></div>
+<div style="position:absolute;left:367.32px;top:566.40px" class="cls_006"><span class="cls_006">Delighted / Satisfied /Average/ Dissatisfied</span></div>
+<div style="position:absolute;left:18.48px;top:593.40px" class="cls_005"><span class="cls_005">Service Representative's Name :</span></div>
+<div style="position:absolute;left:325.32px;top:593.40px" class="cls_005"><span class="cls_005">Customer Name :</span></div>
+<div style="position:absolute;left:18.24px;top:604.08px" class="cls_010"><span class="cls_010">Cummins ID No :</span></div>
+<div style="position:absolute;left:159.96px;top:604.08px" class="cls_006"><span class="cls_006">19547937HAC</span></div>
+<div style="position:absolute;left:240.60px;top:604.08px" class="cls_006"><span class="cls_006">Service Rep Signature and Date</span></div>
+<div style="position:absolute;left:409.20px;top:604.08px" class="cls_006"><span class="cls_006">Customer Signature  and Date</span></div>
+<div style="position:absolute;left:18.24px;top:612.96px" class="cls_010"><span class="cls_010">Promotion ID No :</span></div>
+<div style="position:absolute;left:159.96px;top:612.96px" class="cls_006"><span class="cls_006">1009052</span></div>
+<div style="position:absolute;left:18.24px;top:621.84px" class="cls_010"><span class="cls_010">Form No :</span></div>
+<div style="position:absolute;left:241.56px;top:629.88px" class="cls_012"><span class="cls_012">Escalation Matrix</span></div>
+<div style="position:absolute;left:140.04px;top:642.12px" class="cls_002"><span class="cls_002">Dealership</span></div>
+<div style="position:absolute;left:400.68px;top:642.12px" class="cls_002"><span class="cls_002">Cummins</span></div>
+<div style="position:absolute;left:65.52px;top:652.68px" class="cls_005"><span class="cls_005">*Designation</span></div>
+<div style="position:absolute;left:209.04px;top:652.68px" class="cls_005"><span class="cls_005">Contact No.</span></div>
+<div style="position:absolute;left:318.00px;top:652.68px" class="cls_005"><span class="cls_005">Function</span></div>
+<div style="position:absolute;left:385.44px;top:652.68px" class="cls_005"><span class="cls_005">Designation</span></div>
+<div style="position:absolute;left:469.56px;top:652.68px" class="cls_005"><span class="cls_005">Contact No.</span></div>
+<div style="position:absolute;left:63.60px;top:664.56px" class="cls_006"><span class="cls_006">Service Manager</span></div>
+<div style="position:absolute;left:369.84px;top:664.56px" class="cls_006"><span class="cls_006">Dealer account Manager</span></div>
+<div style="position:absolute;left:67.08px;top:675.24px" class="cls_006"><span class="cls_006">Vice President</span></div>
+<div style="position:absolute;left:306.12px;top:674.88px" class="cls_006"><span class="cls_006">Customer Support</span></div>
+<div style="position:absolute;left:373.68px;top:675.24px" class="cls_006"><span class="cls_006">Area Service Manager</span></div>
+<div style="position:absolute;left:81.48px;top:685.92px" class="cls_006"><span class="cls_006">COO</span></div>
+<div style="position:absolute;left:378.12px;top:685.92px" class="cls_006"><span class="cls_006">Zonal Service Head</span></div>
+<div style="position:absolute;left:54.36px;top:695.52px" class="cls_006"><span class="cls_006">Head of the Dealership</span></div>
+<div style="position:absolute;left:116.40px;top:704.64px" class="cls_002"><span class="cls_002">I AM CUMMINS , YOU CAN DEPEND ON ME.</span></div>
+<div style="position:absolute;left:369.32px;top:704.64px" class="cls_002"><span class="cls_002">Our Goal : Zero Engine Down</span></div>
+<div style="position:absolute;left:18.36px;top:715.08px" class="cls_006"><span class="cls_006">* These positions would be a part of setup as per Dealership Org structure.</span></div>
+</div>
+
+</body>
+
+
+</apex:page>

@@ -1,0 +1,21 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+
+
+    <aura:attribute name="lastMessagePayload" type="String" access="private"/>
+    <c:StreamingComp channel="/event/MyEvent__e" onMessage="{!c.handleMessage}"/>
+    
+    <aura:attribute name="setMeOnInit" type="String" default="default value" />
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    
+    <aura:attribute name="recid" type="String"/>
+    
+    
+    <div>Message : {!v.lastMessagePayload}</div>
+    
+    <div>RecordId : {!v.recid}</div>
+    
+    
+    
+      <p><b>{!v.setMeOnInit}</b></p>
+
+</aura:component>

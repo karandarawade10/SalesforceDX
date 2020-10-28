@@ -1,0 +1,194 @@
+<apex:page controller="restApiClassSalesforceorgTofetchlist">
+    <html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" lang="en">
+    <apex:slds />
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script> 
+   <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+   <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+ <link rel="stylesheet" href="//code.jquery.com/ui/1.10.4/themes/redmond/jquery-ui.css"/>
+    <style>
+     #overlay {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      position: fixed;
+      background: rgba(43, 34, 34, 0.18);
+      }
+      
+      .spinner {
+      position: fixed;
+      top: 60%;
+      left: 50%;
+      margin-left: -50px; 
+      margin-top: -50px;
+      text-align:center;
+      z-index:1234;
+      overflow: auto;
+      width: 100px; 
+      height: 102px; 
+      }
+    </style>
+    
+    
+
+    <apex:form id="p2">
+          <apex:commandButton value="getPhoto" action="{!getPhotoData}" />
+              {!photo}
+          
+          <br></br>
+            <apex:image value="data:image;base64,{!photo}" />
+
+         
+          <apex:actionFunction name="restAPICall" action="{!getConList}" reRender="p4" oncomplete="hideSpinner();"/>
+          <apex:actionFunction name="restAPICall1" action="{!getConList1}" reRender="p5,p6" oncomplete="hideSpinner();">
+              <apex:param name="accountClcikID" value="" assignTo="{!accId}" />
+          </apex:actionFunction>
+
+       
+        <button type="button" onclick="test();">GET DATA</button><br/>
+    <!--    <apex:pageBlock id="p1">
+            <apex:pageblockButtons>
+             <button type="button" onclick="test();">GET DATA</button>
+            </apex:pageblockButtons>
+            <apex:outputPanel id="p3">
+                 <apex:pageblocktable value="{!listWrap1}" var="a" >
+                <apex:column value="{!a.id}"/>
+                <apex:column value="{!a.LastName}"/> 
+           </apex:pageblocktable>
+            </apex:outputPanel>
+           
+            
+        </apex:pageBlock> -->
+                
+        <article class="slds-card">
+                    <div class="slds-card__header slds-grid"   >
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <span class="slds-icon_container slds-icon-standard-account" title="account">
+                                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                        <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+                                        </svg>
+                                        <span class="slds-assistive-text">account</span>
+                                        </span>
+                                        </div>
+                                        <div class="slds-media__body">
+                                            <h2 class="slds-card__header-title">
+                                                <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Accounts">
+                                                    <span>Accounts</span>
+                                                </a>
+                                                </h2>
+                                                </div>
+                                                
+                                                    </header>
+                                                    </div>
+                                                    <div class="slds-card__body slds-card__body_inner">
+                                                       
+                                                        <div class="foo"><!-- Note the "Scoping Class" is foo -->
+                                                            <apex:dataTable value="{!listWrap}" var="record"  id="p4" styleClass="slds-table slds-table--bordered slds-table--striped">
+                                                                <apex:column >
+                                                                    <a href="" onclick="test2('{!record.id}');">{!record.id}</a>
+                                                                    </apex:column>
+                                                                    <apex:column value="{!record.Name}"/>
+                                                                        </apex:dataTable>
+                                                                    </div>
+                                                        
+                                                    </div>
+                                                    <footer class="slds-card__footer">
+                                                       
+                                                        </footer>
+                                                        </article>          
+                
+                
+                
+                
+                
+            <img src="data:image/png;base64;{!photo}"/>
+        
+       
+          
+                <article class="slds-card">
+                    <div class="slds-card__header slds-grid"   >
+                        <header class="slds-media slds-media_center slds-has-flexi-truncate">
+                            <div class="slds-media__figure">
+                                <span class="slds-icon_container slds-icon-standard-account" title="account">
+                                    <svg class="slds-icon slds-icon_small" aria-hidden="true">
+                                        <use xlink:href="/assets/icons/standard-sprite/svg/symbols.svg#account"></use>
+                                        </svg>
+                                        <span class="slds-assistive-text">account</span>
+                                        </span>
+                                        </div>
+                                        <div class="slds-media__body">
+                                            <h2 class="slds-card__header-title">
+                                                <a href="javascript:void(0);" class="slds-card__header-link slds-truncate" title="Accounts">
+                                                    <span>Contacts</span>
+                                                </a>
+                                                </h2>
+                                                </div>
+                                                
+                                                    </header>
+                                                    </div>
+                                                    <div class="slds-card__body slds-card__body_inner">
+                                                       
+                                                        <div class="foo"><!-- Note the "Scoping Class" is foo -->
+                                                            <apex:dataTable value="{!listWrap1}" var="record" id="p5" styleClass="slds-table slds-table--bordered slds-table--striped">
+                                                                <apex:column value="{!record.c.id}" rendered="{!record.result=='success'}"/>
+                                                                    <apex:column value="{!record.c.LastName}" rendered="{!record.result=='success'}"/>
+                                                                        <apex:column value="{!record.c.LastName}"  rendered="{!record.result!='success'}"/>
+                                                                            </apex:dataTable>
+                                                                        </div>
+                                                                        
+                                                                        
+                                                                        <apex:outputPanel id="p6">
+                                                                            <apex:outputPanel rendered="{!errorRes}">
+                                                                                <apex:outputText >No Record Found</apex:outputText>
+                                                                                </apex:outputPanel></apex:outputPanel>
+                                                        
+                                                    </div>
+                                                    <footer class="slds-card__footer">
+                                                       
+                                                        </footer>
+                                                        </article> 
+            
+              
+    
+     
+     
+       
+    
+     
+    
+       <div id="overlay" class="overlay" style="display:none">
+         <div id="spinner" class="spinner" >
+            <div class="demo-only" style="height: 6rem;">
+               <div role="status" class="slds-spinner slds-spinner_large slds-spinner_brand">
+                  <span class="slds-assistive-text">Loading</span>
+                  <div class="slds-spinner__dot-a"></div>
+                  <div class="slds-spinner__dot-b"></div>
+               </div>
+            </div>
+         </div>
+      </div>
+    </apex:form>
+    
+    <script>
+    
+      function test(){
+           showSpinner();
+          restAPICall();
+      }
+      function test2(accountid){
+        
+            showSpinner();
+            restAPICall1(accountid);
+      }
+      function showSpinner(){
+          $('#overlay').show();
+      }
+      function hideSpinner(){
+          $('#overlay').hide();
+      }
+    
+    </script>
+    </html>
+</apex:page>

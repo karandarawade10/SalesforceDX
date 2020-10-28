@@ -1,0 +1,251 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" renderAs="pdf" standardStylesheets="false">
+<html>
+    <head>
+    <style media="print" type="text/css">
+         td {
+            border: 1px solid black ;
+            font: 9px ; 
+        }
+        body {
+                font-family: Arial Unicode MS;
+            }
+        
+                 
+       @page { size:landscape; }
+    </style>
+</head>
+<body>
+     <table style="border-collapse: collapse; border-spacing: 10px;">
+            <tr>
+                <td colspan="1" style="width:15%;"> Cummins LOGO</td>
+                <td colspan="4" style="width:40%; font:12px; background-color:#FAEBD7;"><center>Distribution Business Unit Cummins Field Service Report<br/>
+                Cummins Check sheet for Maitenance visit<br/>
+                <div style="color:red;">(Dealership Name)</div></center></td>
+                <td colspan="5" style="width:30%; font:10px; background-color:#FAEBD7;">Dealership Branch : Trigent India Pvt. Ltd. <br/>
+                Single Point Contact No. : Snehal Kharade <br/>
+                Toll Free No : 180023452345 <br/>
+                Customer care email ID :</td>
+                <td colspan="1" style="width:20%; background-color:#FAEBD7; color:#FF0000;">Dealership Logo</td>
+            </tr>
+            <!--<tr><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td>
+            <td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td><td style="padding:2%;">Test</td></tr>-->
+            <tr>
+                <td colspan="1" style="width:15%;">SR Type: </td>
+                <td colspan="4" style="width:40%;">Sub Type: </td>
+                <td colspan="4" style="width:30%; font:10px;">SRN: </td>
+                <td colspan="1" style="width:15%;">FSR No.: </td>
+                <td colspan="1" style="width:20%;">Date: </td>
+                
+            </tr>
+            <tr>
+                <td colspan="5" style="width:15%;">Customer Name:ksaksdaksd kaskdaksdask kasdkaksdk askdaskdasdk askdaskdkasdka aksdkaskdaskd kasdkaskdk askdkaskd askdkask kas askdkask </td>
+                <td colspan="4" style="width:40%;">Contact Person Name: </td>
+                <td colspan="1" style="width:30%; font:10px;">Designation: </td>
+                <td colspan="1" style="width:15%; font:10px;">Contact No.: +91 9860618879 </td>
+                
+                
+            </tr>
+            <tr>
+                <td colspan="1" style="width:15%;">ESN: </td>
+                <td colspan="4" style="width:40%;">GSN: </td>
+                <td colspan="4" style="width:30%; font:10px;">Gen/Eqpt Model: </td>
+                <td colspan="1" style="width:15%;">Alternator / Eqpt. Sr. No: </td>
+                <td colspan="1" style="width:20%;"></td>
+                
+            </tr>
+            <tr>
+                <td colspan="5" style="width:15%;">Engine Model: </td>
+                <td colspan="6" style="width:40%;">OEM: </td>
+            </tr>
+            <tr>
+                <td colspan="5" style="width:10%;">Engineer Name:  </td>
+                
+                <td colspan="4" style="width:15%;"> Cummins ID: </td>
+                <td colspan="2" style="width:20%;"> Promotion ID: </td>
+            </tr>
+            <tr>
+                <td colspan="1" style="width:10%; font:11px; background-color:#F5F5F5;"> <center>System</center></td>
+                <td colspan="4" style="width:40%; font:11px; background-color:#F5F5F5;"> <center>Check Piont</center></td>
+                <td colspan="4" style="width:15%; font:11px; background-color:#F5F5F5;"> <center>Status </center></td>
+                <td colspan="2" style="width:20%; font:11px; background-color:#F5F5F5;"> <center>Remarks </center></td>
+            </tr>
+            <tr>
+                <td colspan="1" rowSpan="7"> Air System </td>
+                <td colspan="4">  Vacuum Indicator - available and working </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Air Cleaner - Dust Cap, Precleaner, sealing, washer and stud </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Air Cleaner Element - condition, rubber seal, damages </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Hoses and Clamps - Tightness, Bulge, Cracks </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Turbocharger And Aftercooler - connections, leakages </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Charge AirCooler - connections, leakages </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Exhaust Bellow - leakages, rain cap, alignmennt </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            
+            <tr>
+                <td colspan="1" rowSpan="6"> Cooling System </td>
+                <td colspan="4">  Sight Glass, LCWL, connections </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Coolant - Level, condition </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Hoses And Clamps - Tightness, Bulge, Crack </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Fan Drive Belt And Tensioner - tightness, cracks </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Radiator / HE / PHE / Coil Cooler - Cap, vent </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Water pump And LTA Pump - leakage from weep hole </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            
+            <tr>
+                <td colspan="1" rowSpan="4"> Lubricating System </td>
+                <td colspan="4">  Sensor / Lub oil Safety control - connections, leakages, functioning </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Lubricating Oil - Level, condition </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Hoses And Clamps - tightness, Bulge, Crack, leakages </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Consumption - record if available from log book </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2" style="padding:2%;"> Remarks      </td>
+            </tr>
+            
+            <tr>
+                <td colspan="1" rowSpan="3"> Fuel System </td>
+                <td colspan="4">  Fuel System Hoses - tightness, Bulge, Crack, leakages </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Fuel Pump And Water Separator </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Fuel Tank And Plumbing - cover, breather, drain, level indicator </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            
+            <tr>
+                <td colspan="1" rowSpan="5"> Starting System </td>
+                <td colspan="4">  Battery - connection, terminal, OCV </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Charger - connections,  belt, earthing, Static charger in AUTO mode </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Self Starter - connections, earthing, solenoid / 4ST </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;">  Electrical Connections - all sensors, lugs And terminal </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                
+                <td colspan="4" style="padding:2%;"> Functionality of Safety - simulate once a year </td>
+                <td colspan="4" style="padding:2%;"> OK Corrected Need Repairs Replacement  </td>
+                <td colspan="2" style="padding:2%;"> Remarks </td>
+            </tr>
+            <tr>
+                <td colspan="1"> Control Panel / AMF </td>
+                <td colspan="4"> Panel - cleanliness, connections tightnes </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                <td colspan="1"> Main Alternator </td>
+                <td colspan="4">  Annual Check - connections And cleanliness AVR, RRA, Insulation resistance </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            <tr>
+                <td colspan="1"> Sub Base And Canopy </td>
+                <td colspan="4">  Breather hose routing, cleanliness, leakages, cracks, Doors And Locks </td>
+                <td colspan="4"> OK Corrected Need Repairs Replacement </td>
+                <td colspan="2"> Remarks Remarks Remarks</td>
+            </tr>
+            
+            
+     </table>
+     
+</body>
+</html>
+
+</apex:page>

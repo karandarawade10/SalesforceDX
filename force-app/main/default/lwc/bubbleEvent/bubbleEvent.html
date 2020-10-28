@@ -1,0 +1,25 @@
+<template>
+    <lightning-card icon-name="standard:contact" title="Buuble event">
+        
+        <template if:true={parentMsg}>
+            Parent Method calling chid method with message:<b>{parentMsg}</b>      
+        </template>
+
+
+     <lightning-input value={accountName} 
+      label="Account Name"
+      placeholder="Enter Account name"
+      onchange={captureAccountName}
+     ></lightning-input>
+     
+      <br/>
+    
+     <lightning-button 
+      label="Bubble Event" variant="brand"
+      onclick={handleBubbleEvent}>
+    </lightning-button>
+
+    
+
+    </lightning-card>
+</template>

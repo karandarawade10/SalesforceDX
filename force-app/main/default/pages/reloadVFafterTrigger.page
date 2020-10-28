@@ -1,0 +1,6 @@
+<apex:page controller="vfReloadController">
+    Test
+    <script>
+       window.location.reload();
+    </script>
+</apex:page>

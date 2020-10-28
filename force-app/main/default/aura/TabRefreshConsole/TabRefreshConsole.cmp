@@ -1,0 +1,10 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" access="global" >
+    <lightning:workspaceAPI aura:id="workspace" />	
+    <aura:handler event="lightning:tabRefreshed" action="{! c.onTabRefreshed }"/> 
+      <aura:attribute name="count" type="Integer" default="1"/>
+    <lightning:card title="Header Text" iconName="standard:add_contact" footer="Footer Text">
+        <p class="slds-p-horizontal_small">
+            Tab Refresh
+        </p>
+    </lightning:card>
+</aura:component>

@@ -1,0 +1,13 @@
+<apex:page controller="XMLparse">
+    <apex:slds />
+    <apex:Form >
+    
+    <apex:inputFile value="{!body}" fileName="{!name}"/>
+   
+    <apex:commandButton value="SUBMIT" action="{!readData}"></apex:commandButton>
+    
+    
+    
+    </apex:Form>
+
+</apex:page>

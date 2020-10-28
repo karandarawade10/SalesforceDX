@@ -1,0 +1,54 @@
+<template>
+  <div class="c-container">
+
+    <lightning-layout multiple-rows="true">
+
+      <lightning-layout-item padding="around-small" size="12">
+
+        <lightning-card title="Contact List" icon-name="standard:contact">
+            <p class="slds-m-left_small"> 
+              <template if:true={childMessage}>
+                Selected Conatact Name: <b>{childMessage}</b><br/>
+            </template>
+            </p>
+            <br/>
+
+            <lightning-button  class="slds-m-left_small"
+            label="Call Child Method" variant="brand"
+            onclick={callChildMethod}>
+          </lightning-button>
+            <br/>
+
+            <div onsimplebubble={bubbleEventParent} class="slds-m-left_small">
+                <c-bubble-event> </c-bubble-event>
+            </div>
+
+          </lightning-card>
+      </lightning-layout-item>
+
+     <!-- Parent Contact-->
+      
+      <lightning-layout-item size="12">
+            
+            <template if:true={contacts}>
+              <lightning-layout multiple-rows="true">
+                  <template for:each={contacts} for:item="con">
+                    
+                    <lightning-layout-item padding="around-small" size="4" key={con.id} >
+
+                        <c-child-contact contact={con}
+                          key={con.id} 
+                          onsimple={handleChildClickEvent}
+                          >
+                    </c-child-contact>
+
+                  </lightning-layout-item>
+                    
+                  </template>
+          </lightning-layout>
+        </template>
+      </lightning-layout-item>
+
+    </lightning-layout>
+  </div>
+</template>

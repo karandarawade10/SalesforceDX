@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "experimentalDecorators": true,
+        "baseUrl": ".",
+        "paths": {
+            "c/bubbleEvent": [
+                "bubbleEvent/bubbleEvent.js"
+            ],
+            "c/calculator": [
+                "calculator/calculator.js"
+            ],
+            "c/childContact": [
+                "childContact/childContact.js"
+            ],
+            "c/childContactEvent": [
+                "childContactEvent/childContactEvent.js"
+            ],
+            "c/hellowWorld": [
+                "hellowWorld/hellowWorld.js"
+            ],
+            "c/lWCApexCall": [
+                "lWCApexCall/lWCApexCall.js"
+            ],
+            "c/parentContact": [
+                "parentContact/parentContact.js"
+            ],
+            "c/propertyLWC": [
+                "propertyLWC/propertyLWC.js"
+            ],
+            "c/Leaflet": [
+                "../staticresources/Leaflet/Leaflet.js"
+            ]
+        }
+    },
+    "include": [
+        "**/*",
+        "../../../../.sfdx/typings/lwc/**/*.d.ts"
+    ],
+    "typeAcquisition": {
+        "include": [
+            "jest"
+        ]
+    },
+    "paths": {
+        "c/*": [
+            "*"
+        ]
+    }
+}

@@ -1,0 +1,33 @@
+<template>
+    <!-- OnContact change event 
+    
+    -->
+    <lightning-input value={contactName} label="Enter Contact Name" onchange={onContactChange}></lightning-input>
+    <lightning-button label="Load Contact with imperative approach" onclick={loadContact}></lightning-button></br>
+
+    <!-- Using @Wire method to get apex data and display  -->
+     
+     <p>
+        =====Display data using @Wire approach to call apex data =====
+        1. @Wire method calls when component get loaded
+        2. @wire method calls when pasing parameter gets changed  
+     </p>
+    <template for:each={contacts.data} for:item="contact">
+        <p key={contact.Id}>{contact.Name}</p>
+    </template>
+
+</br>
+   <!-- Using Imperative approach   to get apex data and display  -->
+    <p>
+        =====Display data using imperative approach to call apex data=====
+       1. Imperative method (to call apex) does not load automatically 
+       2. It  will load on perticular event
+    </p>
+  
+    <template for:each={contactData} for:item="contact">
+        <p key={contact.Id}>{contact.Name}</p>
+    </template>
+    <template if:true={error}>
+        Error: {error}
+    </template>
+</template>

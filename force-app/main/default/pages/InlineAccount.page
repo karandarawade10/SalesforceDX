@@ -1,0 +1,8 @@
+<apex:page standardController="Account"  tabstyle="account" sidebar="false">
+  <apex:pageBlock >
+    <apex:form >
+      
+         {!Account.Name}
+    </apex:form>
+  </apex:pageBlock>
+</apex:page>

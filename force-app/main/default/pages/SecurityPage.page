@@ -1,0 +1,13 @@
+<apex:page standardController="Case" extensions="SecurityController">
+   <apex:form >
+    <apex:pageblock >
+       <apex:pageBlockTable value="{!relatedCases}" var="val">
+         <apex:facet name="header"><b>Open Customer Service Cases {!Case.AccountId}</b></apex:facet>       
+         <apex:column value="{!val.id}"/>         
+         <apex:column value="{!val.name}"/>
+         <apex:column value="{!val.Authorization_Group__c}"/>
+           
+       </apex:pageBlockTable> 
+    </apex:pageblock>
+  </apex:form>
+</apex:page>

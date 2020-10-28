@@ -1,0 +1,15 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+	<lightning:layout horizontalAlign="spread" multipleRows="true">
+    <lightning:layoutItem flexibility="grow" size="12">1</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="8" mediumDeviceSize="10" largeDeviceSize="8">2</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="2" largeDeviceSize="4">3</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="6" largeDeviceSize="4">4</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="4" mediumDeviceSize="6" largeDeviceSize="4">5</lightning:layoutItem>
+    <lightning:layoutItem flexibility="grow" size="12" largeDeviceSize="4">
+        <lightning:layout horizontalAlign="spread" multipleRows="true">
+            <lightning:layoutItem flexibility="grow" size="6" mediumDeviceSize="12" largeDeviceSize="6">6</lightning:layoutItem>
+            <lightning:layoutItem flexibility="grow" size="6" mediumDeviceSize="12" largeDeviceSize="6">7</lightning:layoutItem>
+        </lightning:layout>
+    </lightning:layoutItem>
+</lightning:layout>
+</aura:component>

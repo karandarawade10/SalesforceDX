@@ -1,0 +1,10 @@
+<apex:page >
+  <!-- Begin Default Content REMOVE THIS -->
+  <h1>Congratulations211321</h1>
+  This is your new Page
+  
+  <apex:panelgrid columns="1">
+                Image
+                <apex:image url="https://karand2-dev-ed.my.salesforce.com/0696F000006dsZk?retUrl=%2F_ui%2Fcore%2Fchatter%2Ffiles%2FFileTabPage"/>
+            </apex:panelgrid>
+</apex:page>

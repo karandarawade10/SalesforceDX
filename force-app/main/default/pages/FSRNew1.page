@@ -1,0 +1,379 @@
+<apex:page showHeader="false" applyHtmlTag="false" applyBodyTag="false" standardStylesheets="false" renderAs="pdf">
+<html>
+    <head>
+    <style media="print" type="text/css">
+        
+         td {
+           border: 0.5px solid black; 
+           border-collapse: separate;
+           font: 12px;
+        }
+        body {
+       font-family: Arial, Helvetica, sans-serif;
+            }
+        .engine{
+           height:20px;
+           font: 10px;
+        }
+        .t1{
+          font-weight: bold;
+        }
+        .top{
+          font: 10px;
+          vertical-align:top;
+          margin-top:10px; 
+          margin-left:5px;
+        }
+                 
+       @page { size:A3; }
+    </style>
+</head>
+<body>
+    
+        <table style="border-collapse: collapse;">
+            <tr>
+                <td colspan="2.5" style="padding:2%;"> <img src="{!$resource.cumminslogo}"/></td>
+                <td colspan="4" style="padding:2%;background: #FDE9D9; text-align:center"><h2>
+                    Distribution Business Unit<br/>Cummins Field Service Report<br/><span style="color:red;">Trident Services</span></h2></td>
+                <td colspan="3" style="padding:2%;background: #FDE9D9;font-weight: bold" class="t1">
+                    &nbsp;<label style="font-weight: bold">Dealership Branch :</label>  <BR/>
+                    &nbsp;<b>Single Point Contact No. : </b><BR/>
+                    &nbsp;<b>Toll Free No :</b><BR/>
+                    &nbsp;<b>Customer care email ID :</b><BR/>
+                </td>
+                <td colspan="2" style="padding:2%;background: #FDE9D9;"></td>
+            </tr>
+            
+            <tr>
+                <td height="30"  style="padding:1%;" class="top"><b>&nbsp;SR Type : FSEM </b></td>
+                <td height="30" colspan="2" style="padding:1%;" class="top"><b>&nbsp;Sub Type :AMC PM Visit</b> </td>
+                <td height="30" colspan="2" style="padding:1%;" class="top"><b>&nbsp;SRN: SR-TS-SW-1819-005669</b></td>
+                <td height="30" colspan="3" style="padding:1%;" class="top"><b>&nbsp;FSR No : SR-TS-SW-1819-005669_1126_310518_camc_form_Fsr</b></td>
+                <td height="30" colspan="4" style="padding:1%;" class="top"><b>&nbsp;Date: 9th Aug. 2018</b></td>
+            </tr>
+            <tr> </tr>
+            <tr>
+                
+                <td colspan="3" height="35" style="padding:1%;" class="top"><b>&nbsp;Customer Name : </b>EON KHARADI INFRASTRUCTURE PRIVATE LIMITED (SEZ)</td>
+                <td colspan="2" height="35" style="padding:1%;" class="top"><b>&nbsp;Contact Person Name : </b>BALAJI</td>
+                <td colspan="3" height="35" style="padding:1%;" class="top"><b>&nbsp;Designation : </b>Facility Incharge</td>
+                <td colspan="4" height="35" style="padding:1%;" class="top"><b>&nbsp;Contact No : </b>7030902874</td>
+            </tr>
+            
+            <tr>
+                
+                <td colspan="3" height="35" style="padding:1%;" class="top"><b>&nbsp;Customer Address :</b>Kharadi, Pune </td>
+                <td colspan="2" height="35" style="padding:1%;" class="top"><b>&nbsp;Camp Address :</b></td>
+                <td colspan="3" height="35" style="padding:1%;" class="top"><b>&nbsp;eMail id 1:</b> harge@panchshil. eoncfm.inccom</td>
+                <td colspan="4" height="35" style="padding:1%;" class="top"><b>&nbsp;eMail id 2:</b></td>
+            </tr>
+            
+            <tr>
+                <td colspan="2" style="padding:1%;" class="top"><b>&nbsp;ESN :</b></td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;Equp Model:</b><br/>Stamford</td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;GSN :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b>22334535</td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;Alternator/Equp Sr.No :</b>22334535</td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;Current Hours :</b></td>
+                <td colspan="1" style="padding:1%;" class="top"><b></b>&nbsp;1847</td>
+                <td colspan="1" style="padding:1%;" class="top"><b></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;Cumulative Hours:</b>1847</td>
+                <td colspan="4" style="padding:1%;" class="top"><b>&nbsp;Component Hours :</b></td>
+            </tr>
+
+           <tr>
+                <td colspan="2" style="padding:1%;" class="top"><b>&nbsp;Engine Model :</b><br/>&nbsp;ENGINE.KTA-38-G5.1180 @ 1500 A</td>
+                <td colspan="1" style="padding:1%;" class="top"><b>&nbsp;OEM: </b>Powerica</td>
+                <td colspan="3" style="padding:1%;" class="top"><b>&nbsp;Avg. Monthly Running Hrs :</b>5 </td>
+                <td colspan="6" style="padding:1%;" class="top">
+                &nbsp;<b>Last B Check done at Hrs  Date :</b> 1828 <BR/>
+                    &nbsp;<b style="color:#55B8F0;">Last D Check done at Hrs &amp; Date : </b><BR/>
+                    &nbsp;<b>Battery repalced Hrs &amp; Date :</b><BR/>
+                    &nbsp;<b>Coolant replaced Hrs &amp; date :</b><BR/>
+                    &nbsp;<b style="color:#55B8F0;">Air Cleaner element replaced Hrs and Date:</b>4 OCt 2018<BR/>
+               </td>
+            </tr>
+            
+             <tr>
+                <td colspan="2" style="padding:1%;" class="top" height="50">
+                 &nbsp;<b>Global Failure Code :</b> 1828 <BR/> <BR/> 
+                    &nbsp;<b style="color:#55B8F0;">Digital Failure Code :</b>
+                 </td>
+                <td colspan="4" style="padding:1%;" class="top"><b>&nbsp;Brand and Grade of Lube Oil used :</b></td>
+                <td colspan="6" style="padding:1%;" class="top">
+                    &nbsp;<b>&nbsp;Type of Coolant Used:</b> 1828 <BR/>
+                    &nbsp;<b>&nbsp;Battery Make : </b><BR/>
+                    &nbsp;<b style="color:#55B8F0;">Model:</b><BR/>
+                    &nbsp;<b style="color:#55B8F0;">Battery Sr No.:</b><BR/><BR/>
+               </td>
+            </tr>
+            
+            
+            <tr>
+                <td colspan="2" style="padding:1%;" height="25" class="top"><b>&nbsp;DG Set : AMF</b><BR/>
+                 </td>
+                <td colspan="2" style="padding:1%;" class="top"><b>&nbsp;Controller Type :</b> PCC 3100</td>
+                <td colspan="8" style="padding:1%;" class="top">
+                    <b>&nbsp;Coolant Concentration Level :</b><span style="color:red">Value</span> 
+               </td>
+            </tr>
+            	
+            <tr>
+                <td height="20px" colspan="6" style="padding:1%; background: #DCDCDC; text-align: center;font-weight: bold;color:red; font-size:14px">Engine Performance Parameters
+                    <BR/>
+                </td>
+                <td height="20px" colspan="6" style="padding:1%; background: #DCDCDC; text-align: center;font-weight: bold;color:red;font-size:14px">Service Request Details</td>
+            </tr>
+            
+            
+             <tr>
+                <td class="engine" height="25" colspan="2" style="padding:1%;"><b>&nbsp;Low idle RPM</b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%;">&nbsp;100 RPM</td>
+                <td class="engine" height="25" colspan="2" style="padding:1%;"><b>&nbsp;Lube Oil pressure</b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%;">&nbsp;</td>
+                <td class="engine" height="25" colspan="2.5" style="padding:1%;"><b>&nbsp;Response to Service </b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%; text-align:center;"><b>Date<br/>
+(dd/mm/yy)</b></td>
+                 <td height="25" colspan="1.5" style="padding:1%;text-align:center;"><b>Time</b></td>
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="2" style="padding:1%;"><b>&nbsp;High idle RPM</b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" height="25" colspan="2" style="padding:1%;"><b>&nbsp;Lube Oil pressure</b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" height="25" colspan="2.5" style="padding:1%;"><b>&nbsp;Failure Date</b></td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" height="25" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="2" style="padding:1%;"><b>&nbsp;Full Load RPM</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2" style="padding:1%;"><b>&nbsp;Lube Oil pressure</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b>&nbsp;Failure Reported on</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="2" style="padding:1%;"><b>&nbsp;Coolant Temp</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2" style="padding:1%;"><b>&nbsp;Lube Oil pressure</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b>&nbsp;Customer Requested on</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="2"  style="padding:1%;"><b>&nbsp;Cranking Voltage</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2" style="padding:1%;"><b></b></td>
+                <td class="engine" colspan="1.5" style="padding:1%;"></td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b>&nbsp;Attended on</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            <tr>
+              <td height="23px" colspan="4" style="padding:1%; background: #DCDCDC; text-align: center;font-weight: bold; font-size:12px"><b>Parameters for Generator Set</b>
+                    <BR/>
+              </td>
+             <td height="23px" colspan="2" style="padding:1%; background: #DCDCDC; text-align: center;font-weight: bold;font-size:12px"><b>Parameters for Other applications</b></td>       
+             <td colspan="2.5" style="padding:1%;" class="engine"><b>&nbsp;Diagnosis Completed on</b></td>
+             <td colspan="1.5" style="padding:1%; text-align:center;" class="engine">31/05/18</td>
+             <td colspan="1.5" style="padding:1%; text-align:center;" class="engine">15:30</td>
+                
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="1.5"  style="padding:1%;"><b>&nbsp;Voltage (AC)</b></td>
+                <td class="engine" colspan="0.5" style="padding:1%;">&nbsp;415Volts</td>
+                <td class="engine" colspan="0.5" style="padding:1%;"><b>&nbsp;Frequency</b></td>
+                <td class="engine" colspan="1" style="padding:1%;">&nbsp;50 Hz</td>
+                <td class="engine" colspan="1" style="padding:1%;"><b>&nbsp;Drilling Speed</b></td>
+                <td class="engine" colspan="1" style="padding:1%;">RPM</td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b>&nbsp;Required Material Received on</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            
+            
+             <tr>
+                <td class="engine" colspan="1.5"  style="padding:1%;"><b>&nbsp;Current (AC)</b></td>
+                <td class="engine" colspan="0.5" style="padding:1%;">&nbsp;Amp</td>
+                <td class="engine" colspan="0.5" style="padding:1%;"><b>&nbsp;Load</b></td>
+                <td class="engine" colspan="1" style="padding:1%;">Kw</td>
+                <td class="engine" colspan="1" style="padding:1%;"><b>&nbsp;bb</b></td>
+                <td class="engine" colspan="1" style="padding:1%;">RPM</td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b>&nbsp;Actual Resolution Date</b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+            
+            <tr>
+                <td class="engine" colspan="1.5"  style="padding:1%;"><b>&nbsp;Power Factor</b></td> 
+                <td class="engine" colspan="2" style="padding:1%;"></td>
+                <td class="engine" colspan="1" style="padding:1%;"></td>
+                <td class="engine" colspan="1" style="padding:1%;"><b>&nbsp;Gear Speed</b></td>
+                <td class="engine" colspan="1" style="padding:1%;">RPM</td>
+                <td class="engine" colspan="2.5" style="padding:1%;"><b></b></td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">31/05/18</td>
+                <td class="engine" colspan="1.5" style="padding:1%; text-align:center;">15:30</td>
+            </tr>
+
+      
+           <!-- purpose and Customer Complaint -->
+           
+            <tr>
+             <td class="engine" colspan="12"  style="padding:1%; margin-left:2px;font-size:12px;">
+                 <b><span style="color:red">&nbsp;for AMC/CAMC Visits :</span> Purpose :</b> <br/>
+                 <b><span style="color:red">&nbsp;For Break down calls:</span> Customer Complaint:</b> <br/><br/>
+             </td>
+            </tr>
+            
+            <!-- Inspection/Observation and Work Done in Brief -->
+            <tr>
+             <td height="40" colspan="12"  style="padding:1%; margin-left:2px;font-size:12px;vertical-align:top;">
+                 <b>&nbsp;Inspection/Observation and Work Done in Brief:</b>
+                 
+             </td>
+            </tr>
+            
+            <!-- Inspection/Observation and Work Done in Brief -->
+            <tr>
+             <td height="40" colspan="12"  style="padding:1%; margin-left:2px;font-size:12px;vertical-align:top;">
+                 <b>&nbsp;Problem Resolution/Solution :</b>
+                 
+             </td>
+            </tr>
+            
+            <!-- Inspection/Observation and Work Done in Brief -->
+            <tr>
+             <td height="40" colspan="12"  style="padding:1%; margin-left:2px;font-size:12px;vertical-align:top;">
+                 <b>&nbsp;Recommendation/Suggestion :</b>
+                 
+             </td>
+            </tr>
+            
+             <!-- Problem Status -->
+            <tr>
+             <td height="15" colspan="6"  style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Problem Status:</b>
+             </td>
+             <td height="15" colspan="6"  style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Responsibility:</b>
+             </td>
+            </tr>
+            
+             <!-- Customer Remarks -->
+              <tr>
+             <td height="40" colspan="7"  style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Customer's Remarks (For Escalation, use hierarchy given overleaf):</b>
+             </td>
+             <td height="40" colspan="5"  style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Customer Experience :</b>
+             </td>
+            </tr>
+              
+             <!-- Service Rep Name & Customer Name -->
+              <tr>
+             <td height="20" colspan="2" style="padding:1%; margin-left:2px;font-size:11px;vertical-align:top;">
+                 <b>&nbsp;Service Representative's Name:</b></td>
+             <td height="20" colspan="4"> </td>
+             <td height="20" colspan="1.5"  style="padding:1%; margin-left:2px;font-size:11px;vertical-align:top;">
+                 <b>&nbsp;Customer Name :</b></td>
+             <td height="20" colspan="3.5"> </td>
+            </tr>
+            
+             <!-- Service Rep Name & Customer Name -->
+              <tr>
+              <td height="20" colspan="1" style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Cummins ID No :</b></td>
+             <td height="20" colspan="2"> </td>
+             <td height="20" colspan="3" style="padding:1%;font-size:10px;vertical-align:middle;text-align:center">
+                 <b>&nbsp;Service Rep Signature and Date :</b></td>
+             <td height="20" colspan="5" style="padding:1%;font-size:10px;vertical-align:middle;text-align:center">
+                 <b>Customer Signature and Date</b></td>
+              </tr>
+              
+              <!-- Service Rep Name & Customer Name -->
+              <tr>
+              <td height="20" colspan="1" style="padding:1%; margin-left:2px;font-size:10px;vertical-align:top;">
+                 <b>&nbsp;Promotion ID No : :</b></td>
+             <td height="20" colspan="2"> </td>
+             <td height="30" colspan="3" style="padding:1%;">
+                 </td>
+             <td height="30" colspan="5" style="padding:1%;">
+                 </td>
+              </tr>
+              
+               <!-- Service Rep Name & Customer Name -->
+              <tr>
+              <td height="20" colspan="5" style="padding:1%;font-size:10.5px;vertical-align:middle;text-align:center;color:red;background:#FDE9D9;">
+                 <b>&nbsp;Dealership</b></td>
+             <td height="20" colspan="6"  style="padding:1%;font-size:10.5px;vertical-align:middle;text-align:center;color:red;background:#FDE9D9;">
+                  <b>&nbsp;Cummins</b>
+                  </td>
+              </tr>
+              
+              <!-- Service Rep Name & Customer Name -->
+              <tr style="text-align:center;background: #FDE9D9;font-size:11px;">
+              <td height="20" colspan="2.5" style="padding:1%; margin-left:2px;">
+                 <b>&nbsp;*Designation</b></td>
+              <td height="20" colspan="3"><b>Contact No.</b> </td>
+              <td height="20" colspan="1.7"><b>Function</b> </td>
+              <td height="20" colspan="2"><b>Designation</b> </td>
+              <td height="20" colspan="2.5"><b>Contact No.</b></td>
+              
+              </tr>
+            
+             <tr style="text-align:center;vertical-align: middle;">
+              <td height="20" colspan="2.5" style="padding:1%; margin-left:2px;font-size:10px; ">
+                 <b>&nbsp;Service Manager:</b></td>
+              <td height="20" colspan="3"> </td>
+              <td height="20" colspan="1.5" style="border-style:hidden;"> </td>
+              <td height="20" colspan="2"> </td>
+              <td height="20" colspan="3"> </td>
+              
+              </tr>
+              
+              <tr style="text-align:center;vertical-align: middle;">
+              <td height="20" colspan="2.5" style="padding:1%; margin-left:2px;font-size:10px;">
+                 <b>&nbsp;Vice President:</b></td>
+              <td height="20" colspan="3"> </td>
+              <td height="20" colspan="1.5" style="border-style:hidden;font-size:10px;"> <b>Customer Support</b></td>
+              <td height="20" colspan="2"> </td>
+              <td height="20" colspan="3"> </td>
+              
+              </tr>
+              
+              
+              <tr style="text-align:center;vertical-align: middle;">
+              <td height="20" colspan="2.5" style="padding:1%; margin-left:2px;font-size:10px;">
+                 <b>&nbsp;COO:</b></td>
+              <td height="20" colspan="3"> </td>
+              <td height="20" colspan="1.5" style="border-style:hidden;"> <b ></b></td>
+              <td height="20" colspan="2"> </td>
+              <td height="20" colspan="3"> </td>
+              
+              </tr>
+              <tr style="text-align:center;vertical-align: middle;">
+              <td height="20" colspan="2.5" style="padding:1%; margin-left:2px;font-size:10px;">
+                 <b>&nbsp;Head of the Dealership:</b></td>
+              <td height="20" colspan="3"> </td>
+              <td height="20" colspan="1.5"> </td>
+              <td height="20" colspan="2"> </td>
+              <td height="20" colspan="3"> </td>
+              </tr>
+              
+              <tr >
+                 <td height="20" colspan="6" style="text-align:center;vertical-align: middle;color:red;font-size:11px;"><b>I AM CUMMINS , YOU CAN DEPEND ON ME.</b> </td>
+                 <td height="20" colspan="5" style="color:red;font-size:11px"><b>&nbsp;Our Goal : Zero Engine Down</b></td>
+              </tr>
+            
+        </table>
+    
+    </body>
+    </html>
+</apex:page>

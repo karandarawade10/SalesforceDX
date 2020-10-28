@@ -1,0 +1,59 @@
+<aura:component  controller="ParentController" access="global" implements="force:appHostable,flexipage:availableForAllPageTypes">
+   
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>   
+    
+    <aura:attribute name="options" type="List" access="PRIVATE"/>
+    <aura:attribute name="selectedValue" type="String" access="PRIVATE"/>
+    <aura:attribute name="contacts" type="List"/>
+    
+    
+   <aura:handler name="childEvent" event="c:ContactWrapEvent" 
+                  action="{!c.parentComponentEvent}"/>
+
+
+    <!--aura handler with waiting and donewaiting events-->
+    <aura:handler event="aura:waiting" action="{!c.showSpinner}"/>
+    <aura:handler event="aura:doneWaiting" action="{!c.hideSpinner}"/>
+     
+    <!--component attributs -->
+    <aura:attribute name="spinner" type="boolean" default="FALSE"/>
+    
+   
+   <lightning:layoutItem class="slds-var-m-around_x-small">
+        <lightning:select name="colorId" label="Select a color:" 
+                          aura:id="colorId" value="{!v.selectedValue}"
+                          onchange="{!c.handleIndustryChnage}">
+            <aura:iteration items="{!v.options}" var="option">
+                <option text="{!option}" value="{!option}" selected="{!option.selected}"/>
+            </aura:iteration>
+        </lightning:select>
+    </lightning:layoutItem>
+    
+    
+    <div>
+        <lightning:layout multipleRows="true">
+            <aura:iteration items="{!v.contacts}" var="contact">
+                <lightning:layoutItem size="12" mediumDeviceSize="4" padding="around-small">
+                    <c:ChildComponent contact="{!contact}"></c:ChildComponent>
+                </lightning:layoutItem>
+            </aura:iteration>
+        </lightning:layout>
+    </div>
+    
+    
+    <!--loading spinner start-->
+    <aura:if isTrue="{!v.spinner}">
+        <div aura:id="spinnerId" class="slds-spinner_container">
+            <div class="slds-spinner--brand  slds-spinner slds-spinner--large slds-is-relative" role="alert">
+                <span class="slds-assistive-text">Loading...</span>
+                <div class="slds-spinner__dot-a"></div>
+                <div class="slds-spinner__dot-b"></div>
+            </div>
+        </div>
+    </aura:if>
+    <!-- Loading spinner end-->   
+     
+    
+    
+    
+</aura:component>

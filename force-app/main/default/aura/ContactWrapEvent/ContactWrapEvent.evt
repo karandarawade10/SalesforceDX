@@ -1,0 +1,4 @@
+<!--ContactWrapEvent.evt-->
+<aura:event type="COMPONENT" description="Event from Child to Parent">
+    <aura:attribute name="contactWrap" type="Object" />
+</aura:event>

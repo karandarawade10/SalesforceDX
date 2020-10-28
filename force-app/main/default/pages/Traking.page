@@ -1,0 +1,4 @@
+<apex:page standardController="ServiceAppointment"  renderAs="pdf">
+    
+    Test
+</apex:page>

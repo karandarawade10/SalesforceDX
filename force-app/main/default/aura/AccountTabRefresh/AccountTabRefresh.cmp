@@ -1,0 +1,5 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickAction" access="global" >
+     <lightning:workspaceAPI aura:id="workspace"/>
+     <aura:handler event="lightning:tabRefreshed" action="{!c.onTabRefreshed}"/>
+      Tab Refreshed14
+</aura:component>
